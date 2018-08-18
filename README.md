@@ -198,7 +198,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 [commits-shield]: https://img.shields.io/github/commit-activity/y/timmo001/addon-home-panel.svg
 [commits]: https://github.com/timmo001/addon-home-panel/commits/master
 [contributors]: https://github.com/timmo001/addon-home-panel/graphs/contributors
-[dockerhub]: https://hub.docker.com/r/timmo001/home-panel
+[dockerhub]: https://hub.docker.com/r/timmo001/addon-home-panel
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [timmo]: https://github.com/timmo001
 [gitlabci-shield]: https://gitlab.com/timmo/addon-home-panel/badges/master/pipeline.svg
