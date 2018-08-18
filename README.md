@@ -201,8 +201,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 [dockerhub]: https://hub.docker.com/r/timmo001/home-panel
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [timmo]: https://github.com/timmo001
-[gitlabci-shield]: https://gitlab.com/timmo001/addon-home-panel/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/timmo001/addon-home-panel/pipelines
+[gitlabci-shield]: https://gitlab.com/timmo/addon-home-panel/badges/master/pipeline.svg
+[gitlabci]: https://gitlab.com/timmo/addon-home-panel/pipelines
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/timmo001/addon-home-panel/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
