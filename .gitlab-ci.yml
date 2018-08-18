@@ -6,7 +6,7 @@ variables:
   ADDON_SLUG: home-panel
   ADDON_TARGET: home-panel
   DOCKER_DRIVER: overlay2
-  DOCKER_HUB_ORG: hassioaddons
+  DOCKER_HUB_ORG: timmo001
 
 stages:
   - preflight
