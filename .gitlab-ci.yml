@@ -172,7 +172,7 @@ stages:
         "${DOCKER_HUB_ORG}/${ADDON_SLUG}:${TAG}" \
         # "${DOCKER_HUB_ORG}/${ADDON_SLUG}:aarch64-${REF}" \
         "${DOCKER_HUB_ORG}/${ADDON_SLUG}:amd64-${REF}" \
-        "${DOCKER_HUB_ORG}/${ADDON_SLUG}:armhf-${REF}" \
+        "${DOCKER_HUB_ORG}/${ADDON_SLUG}:armhf-${REF}"
         # "${DOCKER_HUB_ORG}/${ADDON_SLUG}:i386-${REF}"
     # - |
     #   docker manifest annotate \
