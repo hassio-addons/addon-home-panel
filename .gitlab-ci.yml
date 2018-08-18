@@ -3,8 +3,8 @@ image: docker:latest
 
 variables:
   ADDON_GITHUB_REPO: timmo001/addon-home-panel
-  ADDON_SLUG: home-panel
-  ADDON_TARGET: home-panel
+  ADDON_SLUG: addon-home-panel
+  ADDON_TARGET: addon-home-panel
   DOCKER_DRIVER: overlay2
   DOCKER_HUB_ORG: timmo001
 
