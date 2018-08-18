@@ -170,17 +170,8 @@ stages:
     - |
       docker manifest create \
         "${DOCKER_HUB_ORG}/${ADDON_SLUG}:${TAG}" \
-        # "${DOCKER_HUB_ORG}/${ADDON_SLUG}:aarch64-${REF}" \
         "${DOCKER_HUB_ORG}/${ADDON_SLUG}:amd64-${REF}" \
         "${DOCKER_HUB_ORG}/${ADDON_SLUG}:armhf-${REF}"
-        # "${DOCKER_HUB_ORG}/${ADDON_SLUG}:i386-${REF}"
-    # - |
-    #   docker manifest annotate \
-    #     "${DOCKER_HUB_ORG}/${ADDON_SLUG}:${TAG}" \
-    #     "${DOCKER_HUB_ORG}/${ADDON_SLUG}:aarch64-${REF}" \
-    #     --os=linux \
-    #     --arch=arm64 \
-    #     --variant=v8
     - |
       docker manifest annotate \
         "${DOCKER_HUB_ORG}/${ADDON_SLUG}:${TAG}" \
@@ -194,12 +185,6 @@ stages:
         --os=linux \
         --arch=arm \
         --variant=v6
-    # - |
-    #   docker manifest annotate \
-    #     "${DOCKER_HUB_ORG}/${ADDON_SLUG}:${TAG}" \
-    #     "${DOCKER_HUB_ORG}/${ADDON_SLUG}:i386-${REF}" \
-    #     --os=linux \
-    #     --arch=386
     - |
       docker manifest push \
         "${DOCKER_HUB_ORG}/${ADDON_SLUG}:${TAG}"
