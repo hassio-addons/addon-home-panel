@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: Home Panel
+# Starts server to serve the webapp
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+hass.log.info "Run nginx server.."
+
+nginx -g "daemon off;"

@@ -1,0 +1,89 @@
+# Timmo Hass.io Add-ons: Home Panel
+
+[![Release][release-shield]][release] ![Project Stage][project-stage-shield] ![Project Maintenance][maintenance-shield]
+
+[Home Panel][home-panel] add-on
+
+## About
+
+A touch-compatible web-app for controlling the home. Integrates with
+ [Home Assistant][hass] as an alternative / additional frontend.
+
+### Features
+
+- Card based user interface with support for [HASS][hass] entities, links and
+ cameras.
+- Supports and can be used as alternate / additional frontend for
+ [Home Assistant][hass]
+- Supports MJPEG and related image-based camera/image feeds
+ (can also be used as a photo frame)
+- Light control with brightness, temperature, color, effects etc. support
+- Supports Radio playback from TuneIn API
+- Add weather and weather icons using Home Assistant's
+ [Dark Sky](https://www.home-assistant.io/components/weather.darksky/)
+ component
+- Made for touch screens with a sideways scrolling Material
+ Design interface. (Compatible with desktops as well)
+
+### Screenshots
+
+![Light Theme Screenshot][light-theme]
+![More Info Light Screenshot][more-info-light]
+
+![Dark Theme Screenshot][dark-theme]
+![More Info Dark Screenshot][more-info-dark]
+
+![Radio Screenshot][radio]
+
+[Click here for the full documentation][docs]
+
+{% if channel == "edge" %}
+## WARNING! THIS IS AN EDGE VERSION!
+
+This Hass.io Add-ons repository contains edge builds of add-ons. Edge builds
+add-ons are based upon the latest development version.
+
+- They may not work at all.
+- They might stop working at any time.
+- They could have a negative impact on your system.
+
+This repository was created for:
+
+- Anybody willing to test.
+- Anybody interested in trying out upcoming add-ons or add-on features.
+- Developers.
+
+If you are more interested in stable releases of our add-ons:
+
+<https://github.com/timmo001/repository>
+
+{% endif %}
+{% if channel == "beta" %}
+## WARNING! THIS IS A BETA VERSION!
+
+This Hass.io Add-ons repository contains beta releases of add-ons.
+
+- They might stop working at any time.
+- They could have a negative impact on your system.
+
+This repository was created for:
+
+- Anybody willing to test.
+- Anybody interested in trying out upcoming add-ons or add-on features.
+
+If you are more interested in stable releases of our add-ons:
+
+<https://github.com/timmo001/repository>
+
+{% endif %}
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
+[release-shield]: https://img.shields.io/badge/version-{{ version }}-blue.svg
+[release]: {{ repo }}/tree/{{ version }}
+[docs]: {{ repo }}/blob/{{ version }}/README.md
+[buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
+[light-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/light-theme.png
+[dark-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/dark-theme.png
+[more-info-light]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info-light.png
+[more-info-dark]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info-dark.png
+[radio]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/radio.png
