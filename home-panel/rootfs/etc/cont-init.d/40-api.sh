@@ -6,8 +6,6 @@
 # shellcheck disable=SC1091
 source /usr/lib/hassio-addons/base.sh
 
-echo "REACT_APP_API_URL = $(hass.config.get 'api_url')" > /data/app/.env.local
-
 certfile="/ssl/$(hass.config.get 'certfile')"
 keyfile="/ssl/$(hass.config.get 'keyfile')"
 
