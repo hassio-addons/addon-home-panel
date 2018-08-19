@@ -11,7 +11,7 @@ echo "REACT_APP_API_URL = $(hass.config.get 'api_url')" > /usr/src/app/.env.loca
 certfile="/ssl/$(hass.config.get 'certfile')"
 keyfile="/ssl/$(hass.config.get 'keyfile')"
 
-if [ -f "$certfile" ]; then
+if [ "$(hass.config.get 'ssl')" ]; then
   hass.log.info "Copy SSL certs to api directory"
   cp "$certfile" /usr/src/api/fullchain.pem
   cp "$keyfile" /usr/src/api/privkey.pem

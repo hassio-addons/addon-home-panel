@@ -9,7 +9,7 @@ source /usr/lib/hassio-addons/base.sh
 certfile="/ssl/$(hass.config.get 'certfile')"
 keyfile="/ssl/$(hass.config.get 'keyfile')"
 
-if [ -f "$certfile" ]; then
+if [ "$(hass.config.get 'ssl')" ]; then
   hass.log.info "Copy enabled SSL nginx config"
   echo "server {
     listen 8234 ssl http2 default_server;
