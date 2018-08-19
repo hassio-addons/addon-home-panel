@@ -122,7 +122,8 @@ The private key file to use for SSL.
 ### Option: `config_file`
 
 The location of your config.json in `/config/`. More information on
- configuration [here][config].
+ configuration [here][config]. You can edit the config file while the
+ addon is running. Just refresh the app's page.
 
 **Note**: _The file MUST be stored in `/config/`.
 
