@@ -12,5 +12,5 @@ config_file="/config/$(hass.config.get 'config_file')"
 # shellcheck disable=SC2034
 inotifywait -m "$config_file" | while read file; do \
 hass.log.debug "Update Config.." \
-&& cp "$config_file" /data/api/files/config.json; \
+&& cp "$config_file" /usr/src/api/files/config.json; \
 done

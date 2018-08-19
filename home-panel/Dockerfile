@@ -20,7 +20,7 @@ RUN \
 RUN mkdir -p /run/nginx && mkdir -p /usr/share/nginx/html
 
 # App
-WORKDIR /data/app
+WORKDIR /usr/src/app
 
 # Download and unzip into nginx html directory
 RUN \
@@ -31,7 +31,7 @@ RUN \
     && rm -Rf ./*
 
 # API
-WORKDIR /data/api
+WORKDIR /usr/src/api
 
 # Clone and checkout API release
 RUN \

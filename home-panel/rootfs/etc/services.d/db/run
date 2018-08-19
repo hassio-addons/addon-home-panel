@@ -1,14 +1,14 @@
 #!/usr/bin/with-contenv bash
 # ==============================================================================
 # Timmo Hass.io Add-ons: Home Panel
-# Starts server to serve the api
+# Copy back db to preserve data between restarts
 # ==============================================================================
 # shellcheck disable=SC1091
 source /usr/lib/hassio-addons/base.sh
 
-hass.log.info "Run API.."
-
-# shellcheck disable=SC2164
-cd /usr/src/api
-
-node index.js
+# shellcheck disable=SC2162
+# shellcheck disable=SC2034
+inotifywait -m "/usr/src/api/files/home-panel.db" | while read file; do \
+hass.log.info "Backup db.." \
+&& cp /usr/src/api/files/home-panel.db /config/home-panel.db; \
+done
