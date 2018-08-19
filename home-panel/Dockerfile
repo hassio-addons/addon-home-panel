@@ -36,7 +36,7 @@ WORKDIR /usr/src/api
 # Clone and checkout API release
 RUN \
     git clone https://github.com/timmo001/home-panel-api.git ./ \
-    && git checkout v0.2.2
+    && git checkout v0.2.3
 
 # Install dependencies
 RUN yarn install && yarn cache clean
