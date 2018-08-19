@@ -28,7 +28,3 @@ fi
 if ! hass.config.has_value 'config_file'; then
   hass.die 'No config file was specified'
 fi
-
-if ! hass.file_exists "/config/$(hass.config.get 'config_file')"; then
-  hass.die 'No config file was specified'
-fi
