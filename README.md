@@ -194,7 +194,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 [anchore-shield]: https://anchore.io/service/badges/image/8f74a497abc908834244d697a67675ecd13080199270598283c8e0cea1b1723e
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [bountysource-shield]: https://img.shields.io/bountysource/team/timmo001/activity.svg
-[bountysource]: https://www.bountysource.com/teams/timmo001/issues
+[bountysource]: https://www.bountysource.com/teams/timmo/issues
 [commits-shield]: https://img.shields.io/github/commit-activity/y/timmo001/addon-home-panel.svg
 [commits]: https://github.com/timmo001/addon-home-panel/commits/master
 [contributors]: https://github.com/timmo001/addon-home-panel/graphs/contributors
