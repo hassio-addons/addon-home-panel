@@ -16,4 +16,4 @@ fi
 
 hass.log.info "Copy config.."
 
-cp "$config_file" /usr/src/api/files/config.json
+cp "$config_file" /data/api/files/config.json
