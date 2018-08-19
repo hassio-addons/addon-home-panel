@@ -121,7 +121,10 @@ The private key file to use for SSL.
 
 ### Option: `config_file`
 
-The location of your config.json in /config.
+The location of your config.json in `/config/`. More information on
+ configuration [here][config].
+
+**Note**: _The file MUST be stored in `/config/`.
 
 ## Changelog & Releases
 
