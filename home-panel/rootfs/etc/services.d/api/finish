@@ -1,6 +1,6 @@
 #!/usr/bin/execlineb -S0
 # ==============================================================================
-# Community Hass.io Add-ons: Home Panel
+# Timmo Hass.io Add-ons: Home Panel
 # Take down the S6 supervision tree when Home Panel fails
 # ==============================================================================
 if -n { s6-test $# -ne 0 }

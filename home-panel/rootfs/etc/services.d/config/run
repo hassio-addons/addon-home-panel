@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 # ==============================================================================
-# Community Hass.io Add-ons: Home Panel
+# Timmo Hass.io Add-ons: Home Panel
 # Keeps the config file up to date
 # ==============================================================================
 # shellcheck disable=SC1091

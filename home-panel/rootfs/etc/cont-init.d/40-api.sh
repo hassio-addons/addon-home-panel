@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 # ==============================================================================
-# Community Hass.io Add-ons: Home Panel
+# Timmo Hass.io Add-ons: Home Panel
 # This copies the api files to their respective locations
 # ==============================================================================
 # shellcheck disable=SC1091
