@@ -1,8 +1,8 @@
 ---
 repository:
-  description: "Example - Community Hass.io Add-on for Home Assistant"
-  homepage: https://addons.community
-  topics: examples, hassio-addons, hassio, hass, home-assistant, homeassistant, home-automation
+  description: "Home Panel - Timmo Hass.io Add-on for Home Assistant"
+  homepage: https://github.com/timmo001/repository
+  topics: frontend, hassio-addons, hassio, hass, home-assistant, homeassistant, home-automation
   private: false
   has_issues: true
   has_projects: false
