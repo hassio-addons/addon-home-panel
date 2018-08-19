@@ -11,10 +11,10 @@ config_file="/config/$(hass.config.get 'config_file')"
 if [ ! -f "$config_file" ]; then
   hass.log.info "Config file does not exist. Creating.."
   cp /etc/home-panel/home-panel-config.default.json "$config_file"
-  hass.log.info "You should now edit this file, then restart the addon."
+  hass.log.info "Created. You should now edit this file at '$config_file'"
 fi
 
-hass.log.info "Copy config.."
+hass.log.info "Copy config to API.."
 
 mkdir -p /usr/src/api/files
 cp "$config_file" /usr/src/api/files/config.json
