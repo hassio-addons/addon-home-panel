@@ -9,6 +9,6 @@ source /usr/lib/hassio-addons/base.sh
 # shellcheck disable=SC2162
 # shellcheck disable=SC2034
 inotifywait -m "/usr/src/api/files/home-panel.db" | while read file; do \
-hass.log.info "Backup db.." \
+hass.log.debug "Backup db.." \
 && cp /usr/src/api/files/home-panel.db /config/home-panel.db; \
 done
