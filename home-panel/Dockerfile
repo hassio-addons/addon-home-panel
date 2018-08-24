@@ -24,7 +24,7 @@ WORKDIR /usr/src/app
 
 # Download and unzip into nginx html directory
 RUN \
-    wget https://github.com/timmo001/home-panel/releases/download/v0.5.3/home-panel-built.zip \
+    wget https://github.com/timmo001/home-panel/releases/download/v0.5.4/home-panel-built.zip \
     && unzip home-panel-built.zip \
     && rm -Rf /usr/share/nginx/html/* \
     && mv build/* /usr/share/nginx/html \
@@ -36,7 +36,7 @@ WORKDIR /usr/src/api
 # Clone and checkout API release
 RUN \
     git clone https://github.com/timmo001/home-panel-api.git ./ \
-    && git checkout v0.2.3
+    && git checkout v0.2.4
 
 # Install dependencies
 RUN yarn install && yarn cache clean
