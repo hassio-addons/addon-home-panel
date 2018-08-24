@@ -43,6 +43,8 @@ A touch-compatible web-app for controlling the home. Integrates with
 
 ![Radio Screenshot][radio]
 
+![Forest Theme][theme-forest]
+
 ## Installation
 
 The installation of this add-on is pretty straightforward and not different in
@@ -231,3 +233,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 [hass]: https://www.home-assistant.io/
 [docs]: https://git.timmo.xyz/home-panel/
 [config]: https://git.timmo.xyz/home-panel/configuration/
+[theme-forest]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/theme-forest.png
