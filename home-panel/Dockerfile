@@ -41,7 +41,7 @@ RUN \
 # Install dependencies
 RUN yarn install && yarn cache clean
 
-# Build arugments
+# Build arguments
 ARG BUILD_ARCH
 ARG BUILD_DATE
 ARG BUILD_REF
