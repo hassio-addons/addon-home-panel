@@ -2,7 +2,7 @@
 repository:
   description: "Hass.io Add-on: Home Panel"
   homepage: https://git.timmo.xyz/home-panel/
-  topics: home-panel, home-automation, home-assistant, hassio, hassio-addons, hass, avascript, reactjs
+  topics: home-panel, home-automation, home-assistant, hassio, hassio-addons, hass, javascript, reactjs
   private: false
   has_issues: true
   has_projects: false
