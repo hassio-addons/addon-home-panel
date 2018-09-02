@@ -1,13 +1,13 @@
 ---
 repository:
-  description: "A touch-compatible web-app for controlling the home"
+  description: "Hass.io Add-on: Home Panel"
   homepage: https://git.timmo.xyz/home-panel/
-  topics: home-assistant, home-assistant-frontend, home-automation, javascript, reactjs, websocket, hass, user-interface, webapp, material-design
+  topics: home-panel, home-automation, home-assistant, hassio, hassio-addons, hass, avascript, reactjs
   private: false
   has_issues: true
   has_projects: false
   has_wiki: false
-  has_downloads: true
+  has_downloads: false
   default_branch: master
   allow_squash_merge: true
   allow_merge_commit: true
