@@ -9,6 +9,7 @@
 [![GitHub Activity][commits-shield]][commits]
 
 [![Bountysource][bountysource-shield]][bountysource]
+[![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
 [Home Panel][home-panel] add-on
 
@@ -221,6 +222,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/timmo001/addon-home-panel.svg
 [releases]: https://github.com/timmo001/addon-home-panel/releases
+[buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
+[buymeacoffee]: https://www.buymeacoffee.com/timmo
 [repository]: https://github.com/timmo001/repository
 [semver]: http://semver.org/spec/v2.0.0.html
 [version-shield]: https://images.microbadger.com/badges/version/timmo001/addon-home-panel.svg
