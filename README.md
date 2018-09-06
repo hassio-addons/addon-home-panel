@@ -199,8 +199,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[anchore-shield]: https://anchore.io/service/badges/image/8f74a497abc908834244d697a67675ecd13080199270598283c8e0cea1b1723e
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
+[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[anchore-shield]: https://anchore.io/service/badges/image/8f74a497abc908834244d697a67675ecd13080199270598283c8e0cea1b1723e
 [bountysource-shield]: https://img.shields.io/bountysource/team/timmo001/activity.svg
 [bountysource]: https://www.bountysource.com/teams/timmo/issues
 [commits-shield]: https://img.shields.io/github/commit-activity/y/timmo001/addon-home-panel.svg
@@ -211,7 +212,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 [timmo]: https://github.com/timmo001
 [gitlabci-shield]: https://gitlab.com/timmo/addon-home-panel/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/timmo/addon-home-panel/pipelines
-[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/timmo001/addon-home-panel/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [layers-shield]: https://images.microbadger.com/badges/image/timmo001/addon-home-panel.svg
