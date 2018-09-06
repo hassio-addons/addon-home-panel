@@ -9,6 +9,7 @@
 [![GitHub Activity][commits-shield]][commits]
 
 [![Bountysource][bountysource-shield]][bountysource]
+
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
 [Home Panel][home-panel] add-on
