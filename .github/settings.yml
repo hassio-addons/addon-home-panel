@@ -150,19 +150,6 @@ labels:
   - name: "Hacktoberfest"
     description: "Issues/PRs are participating in the Hacktoberfest"
     color: fbca04
-  - name: "API"
-    description: "API related issue"
-    color: 54d894
-  - name: "Architecture"
-    description: "Related to how the app works and/or is built"
-    color: d1924f
-  - name: "User Interface"
-    description: "User interface based issues"
-    color: 607d8b
-    oldname: "user-interface"
-  - name: "Code Climate"
-    description: "Issues created by Code Climate"
-    color: 42f477
 
 branches:
   - name: master
