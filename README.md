@@ -19,21 +19,22 @@
 A touch-compatible web-app for controlling the home. Integrates with
  [Home Assistant][hass] as an alternative / additional frontend.
 
+![banner][banner]
+
 ## Features
 
-- Card based user interface with support for [HASS][hass] entities, links and
- cameras.
-- Supports and can be used as alternate / additional frontend for
- [Home Assistant][hass]
-- Supports MJPEG and related image-based camera/image feeds
- (can also be used as a photo frame)
-- Light control with brightness, temperature, color, effects etc. support
-- Supports Radio playback from TuneIn API
+- Card based user interface with support for [Home Assistant][hass]
+- Supports MJPEG and related image-based camera/image feeds. Images can also
+ be used
+- Light control with brightness, temperature, color and effects support
+- Supports Radio playback from TuneIn
 - Add weather and weather icons using Home Assistant's
  [Dark Sky](https://www.home-assistant.io/components/weather.darksky/)
  component
 - Made for touch screens with a sideways scrolling Material
  Design interface. (Compatible with desktops as well)
+- Customizable interface
+- Custom theme support
 
 ## Screenshots
 
@@ -238,3 +239,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 [docs]: https://git.timmo.xyz/home-panel/
 [config]: https://git.timmo.xyz/home-panel/configuration/
 [theme-forest]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/theme-forest.png
+[banner]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/banner.png
