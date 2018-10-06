@@ -14,7 +14,8 @@ if [ ! -f "$config_file" ]; then
   hass.log.info "Created. You should now edit this file at '$config_file'"
 fi
 
-hass.log.info "Copy config to API.."
-
-mkdir -p /usr/src/api/files
-cp "$config_file" /usr/src/api/files/config.json
+if [ ! -f "/usr/src/api/files/config.json" ]; then
+  hass.log.info "Symlink config to API directory.."
+  mkdir -p /usr/src/api/files
+  ln -sf "$config_file" /usr/src/api/files/config.json
+fi

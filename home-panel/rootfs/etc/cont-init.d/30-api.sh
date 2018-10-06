@@ -15,8 +15,9 @@ if hass.config.true 'ssl'; then
   cp "$keyfile" /usr/src/api/privkey.pem
 fi
 
-if hass.file_exists "/config/home-panel.db"; then
-  hass.log.info "Copy DB to api.."
+if [ ! -f "/config/home-panel.db" ]; then
+  hass.log.info "Symlink DB to API directory.."
+  touch /config/home-panel.db
   mkdir -p /usr/src/api/files
-  cp /config/home-panel.db /usr/src/api/files/home-panel.db
+  ln -sf "/config/home-panel.db" /usr/src/api/files/home-panel.db
 fi
