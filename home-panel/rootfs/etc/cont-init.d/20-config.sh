@@ -13,9 +13,3 @@ if [ ! -f "$config_file" ]; then
   cp /etc/home-panel/home-panel-config.default.json "$config_file"
   hass.log.info "Created. You should now edit this file at '$config_file'"
 fi
-
-if [ ! -f "/usr/src/api/files/config.json" ]; then
-  hass.log.info "Symlink config to API directory.."
-  mkdir -p /usr/src/api/files
-  ln -sf "$config_file" /usr/src/api/files/config.json
-fi

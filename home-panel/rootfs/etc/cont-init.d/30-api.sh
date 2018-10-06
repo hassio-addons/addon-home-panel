@@ -14,10 +14,3 @@ if hass.config.true 'ssl'; then
   cp "$certfile" /usr/src/api/fullchain.pem
   cp "$keyfile" /usr/src/api/privkey.pem
 fi
-
-if [ ! -f "/config/home-panel.db" ]; then
-  hass.log.info "Symlink DB to API directory.."
-  touch /config/home-panel.db
-  mkdir -p /usr/src/api/files
-  ln -sf "/config/home-panel.db" /usr/src/api/files/home-panel.db
-fi
