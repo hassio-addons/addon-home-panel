@@ -13,6 +13,7 @@
     "i386"
   ],
   "boot": "auto",
+  "hassio_role": "default",
   "hassio_api": true,
   "homeassistant_api": true,
   "host_network": false,
