@@ -13,7 +13,6 @@ RUN \
      nginx=1.14.0-r1 \
      git=2.18.0-r0 \
      wget=1.19.5-r0 \
-     zip=3.0-r6 \
      inotify-tools=3.20.1-r1
 
 # Create nginx directories
@@ -24,7 +23,7 @@ WORKDIR /usr/src/app
 
 # Download and unzip into nginx html directory
 RUN \
-    wget https://github.com/timmo001/home-panel/releases/download/v0.6.5/home-panel-built.zip \
+    wget https://github.com/timmo001/home-panel/releases/download/v0.6.6/home-panel-built.zip \
     && unzip home-panel-built.zip \
     && rm -Rf /usr/share/nginx/html/* \
     && mv build/* /usr/share/nginx/html \
