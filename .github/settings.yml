@@ -150,6 +150,10 @@ labels:
   - name: "Hacktoberfest"
     description: "Issues/PRs are participating in the Hacktoberfest"
     color: fbca04
+  - name: "Dependencies"
+    description: "Updates dependencies"
+    color: 2196F3
+    oldname: "dependencies"
 
 branches:
   - name: master
