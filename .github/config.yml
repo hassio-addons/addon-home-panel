@@ -41,7 +41,6 @@ newIssueWelcomeComment: >
 # Comment to be posted to on PRs from first time contributors in your repository
 newPRWelcomeComment: >
    Thanks for opening this pull request! :+1:
-   If your PR gets accepted and merged in, we will invite you to the project :tada:
 
 # Configuration for first-pr-merge - https://github.com/behaviorbot/first-pr-merge
 
