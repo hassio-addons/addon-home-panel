@@ -11,6 +11,10 @@ supportComment: >
   However, this issue appears to be a support request. Please use our
   support channels to get help with the project.
 
+  Head over to the
+  [Home Assistant community forum](https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597?u=timmo001)
+  or join our [Discord](https://discord.me/hassioaddons) chat.
+
 # Close issues marked as support requests
 close: true
 
