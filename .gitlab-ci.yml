@@ -2,11 +2,11 @@
 image: docker:latest
 
 variables:
-  ADDON_GITHUB_REPO: timmo001/addon-home-panel
-  ADDON_SLUG: addon-home-panel
+  ADDON_GITHUB_REPO: hassio-addons/addon-home-panel
+  ADDON_SLUG: home-panel
   ADDON_TARGET: home-panel
   DOCKER_DRIVER: overlay2
-  DOCKER_HUB_ORG: timmo001
+  DOCKER_HUB_ORG: hassioaddons
 
 stages:
   - preflight
@@ -135,13 +135,6 @@ stages:
     - |
       docker push \
         "${DOCKER_HUB_ORG}/${ADDON_SLUG}:${ADDON_ARCH}-${TAG}"
-    - |
-      docker tag \
-        "registry.gitlab.com/${CI_PROJECT_PATH}/${ADDON_ARCH}:${CI_COMMIT_SHA}" \
-        "${DOCKER_HUB_ORG}/${ADDON_SLUG}-${ADDON_ARCH}:${TAG}"
-    - |
-      docker push \
-        "${DOCKER_HUB_ORG}/${ADDON_SLUG}-${ADDON_ARCH}:${TAG}"
   tags:
     - deploy
   only:
@@ -300,7 +293,7 @@ build:armhf:
   <<: *build
   variables:
     ADDON_ARCH: armhf
-    FROM: hassioaddons/base-armhf:2.0.0
+    FROM: hassioaddons/base-armhf:2.3.0
   tags:
     - build
     - armhf
@@ -309,7 +302,7 @@ build:aarch64:
   <<: *build
   variables:
     ADDON_ARCH: aarch64
-    FROM: hassioaddons/base-aarch64:2.0.0
+    FROM: hassioaddons/base-aarch64:2.3.0
   tags:
     - build
     - aarch64
@@ -318,7 +311,7 @@ build:i386:
   <<: *build
   variables:
     ADDON_ARCH: i386
-    FROM: hassioaddons/base-i386:2.0.0
+    FROM: hassioaddons/base-i386:2.3.0
   tags:
     - build
     - i386
@@ -327,7 +320,7 @@ build:amd64:
   <<: *build
   variables:
     ADDON_ARCH: amd64
-    FROM: hassioaddons/base-amd64:2.0.0
+    FROM: hassioaddons/base-amd64:2.3.0
   tags:
     - build
     - amd64
@@ -412,7 +405,7 @@ manifest:edge:
 publish:stable:
   <<: *publish
   variables:
-    REPOSITORY: timmo001/repository
+    REPOSITORY: hassio-addons/repository
   only:
     - /^v\d+\.\d+\.\d+(?:(?:(?:\+|\.)?[a-zA-Z0-9]+)*)?$/
   environment:
@@ -421,7 +414,7 @@ publish:stable:
 publish:beta:
   <<: *publish
   variables:
-    REPOSITORY: timmo001/repository-beta
+    REPOSITORY: hassio-addons/repository-beta
   only:
     - /^v\d+\.\d+\.\d+(?:-(?:beta|rc)(?:(?:(?:\+|\.)?[a-zA-Z0-9]+)*)?)?$/
   environment:
@@ -430,7 +423,7 @@ publish:beta:
 publish:edge:
   <<: *publish
   variables:
-    REPOSITORY: timmo001/repository-edge
+    REPOSITORY: hassio-addons/repository-edge
   only:
     - master
   environment:
