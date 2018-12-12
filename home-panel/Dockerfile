@@ -13,7 +13,7 @@ RUN \
           nodejs-current=9.11.1-r2 \
           nginx=1.14.2-r0 \
      \
-     && git clone --branch "v0.4.1" --depth=1\
+     && git clone --branch "v0.4.2" --depth=1\
           "https://github.com/timmo001/home-panel-api.git" /opt/api \
      \
      && curl -J -L -o /tmp/panel.zip \
