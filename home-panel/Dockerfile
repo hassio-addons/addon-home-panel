@@ -3,6 +3,7 @@ ARG BUILD_FROM=hassioaddons/base:2.3.0
 FROM ${BUILD_FROM}
 
 # Install packages
+# hadolint ignore=DL3003
 RUN \
      apk add --no-cache --virtual .build-dependencies \
           yarn=1.7.0-r0 \
