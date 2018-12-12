@@ -52,7 +52,7 @@ comparison to installing any other Hass.io add-on.
 1. Once logged in, There will be a prompt to login to Home Assistant.
 
 **NOTE**: Do not add this repository to Hass.io, please use:
-`https://github.com/timmo001/repository`.
+`https://github.com/hassio-addons/repository`.
 
 ## Docker status
 
@@ -116,7 +116,7 @@ you are troubleshooting.
 
 ### Option: `ssl`
 
-Enables/Disables SSL (HTTPS) on the IDE. Set it `true` to enable it,
+Enables/Disables SSL (HTTPS) on the app. Set it `true` to enable it,
 `false` otherwise.
 
 ### Option: `certfile`
@@ -277,7 +277,7 @@ SOFTWARE.
 [releases]: https://github.com/hassio-addons/addon-home-panel/releases
 [repository]: https://github.com/hassio-addons/repository
 [semver]: http://semver.org/spec/v2.0.0.htm
-[home-panel]: https://github.com/timmo001/home-panel
+[home-panel]: https://git.timmo.xyz/home-panel
 [midnight-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/midnight-theme.png
 [forest-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/forest-theme.png
 [more-info-light]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info-light.png
