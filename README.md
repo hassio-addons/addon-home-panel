@@ -28,11 +28,9 @@ A touch-compatible web frontend for controlling the home. Integrates with
 
 ## Screenshots
 
-![Light Theme Screenshot][light-theme]
-![More Info Light Screenshot][more-info-light]
+![Midnight Theme Screenshot][midnight-theme]
 
-![Dark Theme Screenshot][dark-theme]
-![More Info Dark Screenshot][more-info-dark]
+![More Info Light Screenshot][more-info-light]
 
 ![Radio Screenshot][radio]
 
@@ -254,37 +252,35 @@ SOFTWARE.
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
-[forum]: https://community.home-assistant.io/t/community-hass-io-add-on-ide-based-on-cloud9/33810?u=frenck
+[forum]: https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597?u=timmo001
 [frenck]: https://github.com/frenck
-[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-ide/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/hassio-addons/addon-ide/pipelines
+[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-home-panel/badges/master/pipeline.svg
+[gitlabci]: https://gitlab.com/hassio-addons/addon-home-panel/pipelines
 [home-assistant]: https://home-assistant.io
 [i386-anchore-shield]: https://anchore.io/service/badges/image/491da5d9a64e7173746bce5053145c57199e81cbc87f0dfbea9bcab1186b91db
-[i386-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Fide-i386%3Alatest
+[i386-anchore]: https://anchore.io/image/dockerhub/hassioaddons%2Fhome-panel-i386%3Alatest
 [i386-arch-shield]: https://img.shields.io/badge/architecture-i386-blue.svg
-[i386-dockerhub]: https://hub.docker.com/r/hassioaddons/ide-i386
-[i386-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/ide-i386.svg
-[i386-microbadger]: https://microbadger.com/images/hassioaddons/ide-i386
-[i386-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/ide-i386.svg
-[i386-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/ide-i386.svg
-[issue]: https://github.com/hassio-addons/addon-ide/issues
+[i386-dockerhub]: https://hub.docker.com/r/hassioaddons/home-panel-i386
+[i386-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/home-panel-i386.svg
+[i386-microbadger]: https://microbadger.com/images/hassioaddons/home-panel-i386
+[i386-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/home-panel-i386.svg
+[i386-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/home-panel-i386.svg
+[issue]: https://github.com/hassio-addons/addon-home-panel/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
-[license-shield]: https://img.shields.io/github/license/hassio-addons/addon-ide.svg
+[license-shield]: https://img.shields.io/github/license/hassio-addons/addon-home-panel.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
 [patreon-shield]: https://www.frenck.nl/images/patreon.png
 [patreon]: https://www.patreon.com/frenck
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
-[releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-ide.svg
-[releases]: https://github.com/hassio-addons/addon-ide/releases
+[releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-home-panel.svg
+[releases]: https://github.com/hassio-addons/addon-home-panel/releases
 [repository]: https://github.com/hassio-addons/repository
 [semver]: http://semver.org/spec/v2.0.0.htm
 [home-panel]: https://github.com/timmo001/home-panel
-[light-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/light-theme.png
-[dark-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/dark-theme.png
+[midnight-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/midnight-theme.png
 [forest-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/forest-theme.png
 [more-info-light]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info-light.png
-[more-info-dark]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info-dark.png
 [radio]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/radio.png
 [hass]: https://www.home-assistant.io/
 [docs]: https://git.timmo.xyz/home-panel/
