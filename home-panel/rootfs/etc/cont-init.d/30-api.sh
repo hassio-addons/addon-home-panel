@@ -11,6 +11,6 @@ keyfile="/ssl/$(hass.config.get 'keyfile')"
 
 if hass.config.true 'ssl'; then
   hass.log.info "Copy SSL certs to API directory.."
-  cp "$certfile" /usr/src/api/fullchain.pem
-  cp "$keyfile" /usr/src/api/privkey.pem
+  cp "$certfile" /opt/api/fullchain.pem
+  cp "$keyfile" /opt/api/privkey.pem
 fi

@@ -9,6 +9,6 @@ source /usr/lib/hassio-addons/base.sh
 hass.log.info "Run API.."
 
 # shellcheck disable=SC2164
-cd /usr/src/api
+cd /opt/api
 
 DB_PATH=/config/home-panel.db CONFIG_PATH=/config/$(hass.config.get 'config_file') node index.js

@@ -2,43 +2,33 @@ ARG BUILD_FROM=hassioaddons/base:2.3.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
-# Copy root filesystem
-COPY rootfs /
-
 # Install packages
 RUN \
-     apk add --no-cache \
-          nodejs-current=9.11.1-r2 \
+     apk add --no-cache --virtual .build-dependencies \
           yarn=1.7.0-r0 \
-          nginx=1.14.2-r0 \
           git=2.18.1-r0 \
-          wget=1.19.5-r0 \
-          inotify-tools=3.20.1-r1
+     \
+     && apk add --no-cache \
+          nodejs-current=9.11.1-r2 \
+          nginx=1.14.2-r0 \
+     \
+     && git clone --branch "v0.4.1" --depth=1\
+          "https://github.com/timmo001/home-panel-api.git" /opt/api \
+     \
+     && curl -J -L -o /tmp/panel.zip \
+          "https://github.com/timmo001/home-panel/releases/download/v0.6.7/home-panel-built.zip" \
+     && unzip -d /tmp /tmp/panel.zip \
+     && mv /tmp/build /opt/panel \
+     \
+     && cd /opt/api \
+     && yarn install \
+     \
+     && yarn cache clean \
+     && apk del --purge .build-dependencies \
+     && rm -fr /tmp/*
 
-# Create nginx directories
-RUN mkdir -p /run/nginx && mkdir -p /usr/share/nginx/html
-
-# App
-WORKDIR /usr/src/app
-
-# Download and unzip into nginx html directory
-RUN \
-    wget https://github.com/timmo001/home-panel/releases/download/v0.6.7/home-panel-built.zip \
-    && unzip home-panel-built.zip \
-    && rm -Rf /usr/share/nginx/html/* \
-    && mv build/* /usr/share/nginx/html \
-    && rm -Rf ./*
-
-# API
-WORKDIR /usr/src/api
-
-# Clone and checkout API release
-RUN \
-    git clone https://github.com/timmo001/home-panel-api.git ./ \
-    && git checkout v0.4.1
-
-# Install dependencies
-RUN yarn install && yarn cache clean
+# Copy root filesystem
+COPY rootfs /
 
 # Build arguments
 ARG BUILD_ARCH
@@ -53,13 +43,13 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Timmo" \
+    maintainer="Timmo <contact@timmo.xyz>" \
     org.label-schema.description="A touch-compatible web-app for controlling the home" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Home Panel" \
     org.label-schema.schema-version="1.0" \
-    org.label-schema.url="https://git.timmo.xyz/home-panel" \
-    org.label-schema.usage="https://github.com/timmo001/addon-home-panel/tree/master/README.md" \
+    org.label-schema.url="https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597?u=timmo001" \
+    org.label-schema.usage="https://github.com/hassio-addons/addon-home-panel/tree/master/README.md" \
     org.label-schema.vcs-ref=${BUILD_REF} \
-    org.label-schema.vcs-url="https://github.com/timmo001/addon-home-panel" \
-    org.label-schema.vendor="Timmo Hass.io Addons"
+    org.label-schema.vcs-url="https://github.com/hassio-addons/addon-home-panel" \
+    org.label-schema.vendor="Community Hass.io Add-ons"

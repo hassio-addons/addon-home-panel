@@ -14,7 +14,7 @@ if hass.config.true 'ssl'; then
   echo "server {
     listen 8234 ssl http2 default_server;
     listen [::]:8234 ssl http2 default_server;
-    root /usr/share/nginx/html;
+    root /opt/panel;
     index index.html;
     server_name 172.0.0.1;
     ssl_certificate ${certfile};
@@ -28,7 +28,7 @@ else
   echo "server {
     listen 8234 default_server;
     listen [::]:8234 default_server;
-    root /usr/share/nginx/html;
+    root /opt/panel;
     index index.html;
     server_name 172.0.0.1;
     location / {
