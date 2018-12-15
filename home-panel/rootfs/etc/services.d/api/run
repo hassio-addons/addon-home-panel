@@ -11,4 +11,17 @@ hass.log.info "Run API.."
 # shellcheck disable=SC2164
 cd /opt/api
 
-DB_PATH=/config/home-panel.db CONFIG_PATH=/config/$(hass.config.get 'config_file') node index.js
+DB_PATH=/config/home-panel.db
+CONFIG_PATH=/config/$(hass.config.get 'config_file')
+
+if hass.config.true 'ssl'; then
+    SSL_PATH_CERT="/ssl/$(hass.config.get 'certfile')"
+    SSL_PATH_KEY="/ssl/$(hass.config.get 'keyfile')"
+fi
+
+export DB_PATH
+export CONFIG_PATH
+export SSL_PATH_CERT
+export SSL_PATH_KEY
+
+exec node index.js
