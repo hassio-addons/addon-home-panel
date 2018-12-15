@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash
+#!/bin/bash
 # ==============================================================================
 # Community Hass.io Add-ons: Home Panel
 # Runs the NGINX daemon
@@ -14,4 +14,3 @@ else
 fi
 
 exec nginx -c "$options"
-exec sleep 10
