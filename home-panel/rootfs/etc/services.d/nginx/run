@@ -1,11 +1,17 @@
 #!/usr/bin/with-contenv bash
 # ==============================================================================
-# Timmo Hass.io Add-ons: Home Panel
-# Starts server to serve the webapp
+# Community Hass.io Add-ons: Home Panel
+# Runs the NGINX daemon
 # ==============================================================================
 # shellcheck disable=SC1091
 source /usr/lib/hassio-addons/base.sh
 
-hass.log.info "Run nginx server.."
+hass.log.info "Starting NGINX for Riot web..."
+if hass.config.true 'ssl'; then
+    options='/etc/nginx/nginx-ssl.conf'
+else
+    options='/etc/nginx/nginx.conf'
+fi
 
-nginx -g "daemon off;"
+exec nginx -c "$options"
+exec sleep 10

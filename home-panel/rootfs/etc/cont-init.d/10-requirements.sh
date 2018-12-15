@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 # ==============================================================================
-# Timmo Hass.io Add-ons: Home Panel
+# Community Hass.io Add-ons: Home Panel
 # This checks if all user configuration requirements are met
 # ==============================================================================
 # shellcheck disable=SC1091
