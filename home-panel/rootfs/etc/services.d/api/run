@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 # ==============================================================================
-# Timmo Hass.io Add-ons: Home Panel
+# Community Hass.io Add-ons: Home Panel
 # Starts server to serve the api
 # ==============================================================================
 # shellcheck disable=SC1091

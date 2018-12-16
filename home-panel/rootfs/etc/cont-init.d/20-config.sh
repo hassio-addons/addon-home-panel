@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 # ==============================================================================
-# Timmo Hass.io Add-ons: Home Panel
+# Community Hass.io Add-ons: Home Panel
 # This copies the configs to their respective locations
 # ==============================================================================
 # shellcheck disable=SC1091
