@@ -114,7 +114,7 @@
     {
       "name": "Weather",
       "page": 2,
-      "width": 6,
+      "width": 8,
       "cards": [
         {
           "type": "hass",
