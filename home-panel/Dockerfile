@@ -17,7 +17,7 @@ RUN \
           "https://github.com/timmo001/home-panel-api.git" /opt/api \
      \
      && curl -J -L -o /tmp/panel.zip \
-          "https://github.com/timmo001/home-panel/releases/download/v0.6.9/home-panel-built.zip" \
+          "https://github.com/timmo001/home-panel/releases/download/v0.7.0/home-panel-built.zip" \
      && unzip -d /tmp /tmp/panel.zip \
      && mv /tmp/build /opt/panel \
      \
