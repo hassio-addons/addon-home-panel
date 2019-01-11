@@ -39,14 +39,14 @@ The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
 1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
-2. Install the "Home Panel" add-on.
-3. Configure the "Home Panel" add-on. (See below)
-4. Start the "Home Panel" add-on.
-5. Check the logs of the "Home Panel" add-on to see it in action.
-6. Surf to your Hass.io instance and use port `8234`
+1. Install the "Home Panel" add-on.
+1. Configure the "Home Panel" add-on. (See below)
+1. Start the "Home Panel" add-on.
+1. Check the logs of the "Home Panel" add-on to see it in action.
+1. Surf to your Hass.io instance and use port `8234`
     (e.g. `https://hassio.local:8234`).
-7. Create a new account.
-8. Once logged in, There will be a prompt to login to Home Assistant.
+1. Create a new account.
+1. Once logged in, There will be a prompt to login to Home Assistant.
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
