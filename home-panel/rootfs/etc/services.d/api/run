@@ -1,15 +1,15 @@
 #!/usr/bin/with-contenv bash
 # ==============================================================================
 # Community Hass.io Add-ons: Home Panel
-# Starts server to serve the api
+# Starts server to serve the API
 # ==============================================================================
 # shellcheck disable=SC1091
 source /usr/lib/hassio-addons/base.sh
 
 hass.log.info "Run API.."
 
-# shellcheck disable=SC2164
-cd /opt/api
+cd /opt/api \
+    || hass.die "Could not change into API directory"
 
 DB_PATH=/config/home-panel.db
 CONFIG_PATH=/config/$(hass.config.get 'config_file')
