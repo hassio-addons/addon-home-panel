@@ -13,8 +13,6 @@
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
-[![Support my work on Patreon][patreon-shield]][patreon]
-
 A touch-compatible web frontend for controlling the home.
 
 ## About
@@ -41,39 +39,27 @@ The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
 1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
-1. Install the "Home Panel" add-on.
-1. Configure the "Home Panel" add-on. (See below)
-1. Start the "Home Panel" add-on.
-1. Check the logs of the "Home Panel" add-on to see it in action.
-1. Surf to your Hass.io instance and use port `8234`
+2. Install the "Home Panel" add-on.
+3. Configure the "Home Panel" add-on. (See below)
+4. Start the "Home Panel" add-on.
+5. Check the logs of the "Home Panel" add-on to see it in action.
+6. Surf to your Hass.io instance and use port `8234`
     (e.g. `https://hassio.local:8234`).
-1. Create a new account.
-1. Once logged in, There will be a prompt to login to Home Assistant.
+7. Create a new account.
+8. Once logged in, There will be a prompt to login to Home Assistant.
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
 
 ## Docker status
 
-[![Docker Architecture][armhf-arch-shield]][armhf-dockerhub]
-[![Docker Version][armhf-version-shield]][armhf-microbadger]
-[![Docker Layers][armhf-layers-shield]][armhf-microbadger]
-[![Docker Pulls][armhf-pulls-shield]][armhf-dockerhub]
+![Supports armhf Architecture][armhf-shield]
+![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield]
+![Supports i386 Architecture][i386-shield]
 
-[![Docker Architecture][aarch64-arch-shield]][aarch64-dockerhub]
-[![Docker Version][aarch64-version-shield]][aarch64-microbadger]
-[![Docker Layers][aarch64-layers-shield]][aarch64-microbadger]
-[![Docker Pulls][aarch64-pulls-shield]][aarch64-dockerhub]
-
-[![Docker Architecture][amd64-arch-shield]][amd64-dockerhub]
-[![Docker Version][amd64-version-shield]][amd64-microbadger]
-[![Docker Layers][amd64-layers-shield]][amd64-microbadger]
-[![Docker Pulls][amd64-pulls-shield]][amd64-dockerhub]
-
-[![Docker Architecture][i386-arch-shield]][i386-dockerhub]
-[![Docker Version][i386-version-shield]][i386-microbadger]
-[![Docker Layers][i386-layers-shield]][i386-microbadger]
-[![Docker Pulls][i386-pulls-shield]][i386-dockerhub]
+[![Docker Layers][layers-shield]][microbadger]
+[![Docker Pulls][pulls-shield]][dockerhub]
 
 ## Configuration
 
@@ -132,7 +118,7 @@ The location of your config.json in `/config/`. More information on
  configuration [here][config]. You can edit the config file while the
  addon is running. Just refresh the app's page.
 
-**Note**: _The file MUST be stored in `/config/`.
+**Note**: _The file MUST be stored in `/config/`._
 
 ## Changelog & Releases
 
@@ -175,7 +161,7 @@ Thank you for being involved! :heart_eyes:
 
 ## Authors & contributors
 
-The original setup of this repository is by [Franck Nijhof][frenck].
+The original setup of this repository is by [Timmo][timmo].
 
 For a full list of all authors and contributors,
 check [the contributor's page][contributors].
@@ -191,7 +177,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2018-2019 Franck Nijhof
+Copyright (c) 2018-2019 Timmo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -211,63 +197,44 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[aarch64-arch-shield]: https://img.shields.io/badge/architecture-aarch64-blue.svg
-[aarch64-dockerhub]: https://hub.docker.com/r/hassioaddons/home-panel-aarch64
-[aarch64-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/home-panel-aarch64.svg
-[aarch64-microbadger]: https://microbadger.com/images/hassioaddons/home-panel-aarch64
-[aarch64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/home-panel-aarch64.svg
-[aarch64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/home-panel-aarch64.svg
-[alpine-packages]: https://pkgs.alpinelinux.org/packages
-[amd64-arch-shield]: https://img.shields.io/badge/architecture-amd64-blue.svg
-[amd64-dockerhub]: https://hub.docker.com/r/hassioaddons/home-panel-amd64
-[amd64-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/home-panel-amd64.svg
-[amd64-microbadger]: https://microbadger.com/images/hassioaddons/home-panel-amd64
-[amd64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/home-panel-amd64.svg
-[amd64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/home-panel-amd64.svg
-[armhf-arch-shield]: https://img.shields.io/badge/architecture-armhf-blue.svg
-[armhf-dockerhub]: https://hub.docker.com/r/hassioaddons/home-panel-armhf
-[armhf-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/home-panel-armhf.svg
-[armhf-microbadger]: https://microbadger.com/images/hassioaddons/home-panel-armhf
-[armhf-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/home-panel-armhf.svg
-[armhf-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/home-panel-armhf.svg
+[aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
+[banner]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/banner.png
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
-[buymeacoffee]: https://www.buymeacoffee.com/frenck
+[buymeacoffee]: https://www.buymeacoffee.com/timmo
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-home-panel.svg
 [commits]: https://github.com/hassio-addons/addon-home-panel/commits/master
+[config]: https://git.timmo.xyz/home-panel/configuration/
 [contributors]: https://github.com/hassio-addons/addon-home-panel/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
+[dockerhub]: https://hub.docker.com/r/hassioaddons/home-panel
+[docs]: https://git.timmo.xyz/home-panel/
+[forest-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/forest-theme.png
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597?u=timmo001
-[frenck]: https://github.com/frenck
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-home-panel/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-home-panel/pipelines
+[hass]: https://www.home-assistant.io/
 [home-assistant]: https://home-assistant.io
-[i386-arch-shield]: https://img.shields.io/badge/architecture-i386-blue.svg
-[i386-dockerhub]: https://hub.docker.com/r/hassioaddons/home-panel-i386
-[i386-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/home-panel-i386.svg
-[i386-microbadger]: https://microbadger.com/images/hassioaddons/home-panel-i386
-[i386-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/home-panel-i386.svg
-[i386-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/home-panel-i386.svg
+[home-panel]: https://git.timmo.xyz/home-panel
+[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-home-panel/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
+[layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/home-panel.svg
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-home-panel.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2019.svg
-[patreon-shield]: https://www.frenck.nl/images/patreon.png
-[patreon]: https://www.patreon.com/frenck
+[microbadger]: https://microbadger.com/images/hassioaddons/home-panel
+[midnight-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/midnight-theme.png
+[more-info-light]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info-light.png
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
+[pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/home-panel.svg
+[radio]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/radio.png
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-home-panel.svg
 [releases]: https://github.com/hassio-addons/addon-home-panel/releases
 [repository]: https://github.com/hassio-addons/repository
 [semver]: http://semver.org/spec/v2.0.0.htm
-[home-panel]: https://git.timmo.xyz/home-panel
-[midnight-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/midnight-theme.png
-[forest-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/forest-theme.png
-[more-info-light]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info-light.png
-[radio]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/radio.png
-[hass]: https://www.home-assistant.io/
-[docs]: https://git.timmo.xyz/home-panel/
-[config]: https://git.timmo.xyz/home-panel/configuration/
-[banner]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/banner.png
+[timmo]: https://github.com/timmo001
