@@ -11,6 +11,7 @@ hass.log.info "Run API.."
 cd /opt/api \
     || hass.die "Could not change into API directory"
 
+LOG_LEVEL=$(hass.config.get 'log_level')
 DB_PATH=/config/home-panel.db
 CONFIG_PATH=/config/$(hass.config.get 'config_file')
 
@@ -19,6 +20,7 @@ if hass.config.true 'ssl'; then
     SSL_PATH_KEY="/ssl/$(hass.config.get 'keyfile')"
 fi
 
+export LOG_LEVEL
 export DB_PATH
 export CONFIG_PATH
 export SSL_PATH_CERT
