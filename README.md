@@ -205,13 +205,13 @@ SOFTWARE.
 [buymeacoffee]: https://www.buymeacoffee.com/timmo
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-home-panel.svg
 [commits]: https://github.com/hassio-addons/addon-home-panel/commits/master
-[config]: https://git.timmo.xyz/home-panel/configuration/
+[config]: https://timmo.dev/home-panel/configuration/
 [contributors]: https://github.com/hassio-addons/addon-home-panel/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
 [dockerhub]: https://hub.docker.com/r/hassioaddons/home-panel
-[docs]: https://git.timmo.xyz/home-panel/
+[docs]: https://timmo.dev/home-panel/
 [forest-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/forest-theme.png
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597?u=timmo001
@@ -219,7 +219,7 @@ SOFTWARE.
 [gitlabci]: https://gitlab.com/hassio-addons/addon-home-panel/pipelines
 [hass]: https://www.home-assistant.io/
 [home-assistant]: https://home-assistant.io
-[home-panel]: https://git.timmo.xyz/home-panel
+[home-panel]: https://timmo.dev/home-panel
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-home-panel/issues
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
