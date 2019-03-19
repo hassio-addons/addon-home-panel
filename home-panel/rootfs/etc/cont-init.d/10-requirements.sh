@@ -7,5 +7,8 @@
 bashio::config.require.ssl
 
 if ! bashio::config.has_value 'config_file'; then
-  bashio::exit.nok 'No config file was specified'
+  bashio::log.fatal ''
+  bashio::log.fatal 'No configuration filename was specified.'
+  bashio::log.fatal 'This is required for the add-on to function.'
+  bashio::exit.nok
 fi
