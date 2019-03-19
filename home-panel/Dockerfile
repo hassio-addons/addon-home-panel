@@ -1,32 +1,32 @@
-ARG BUILD_FROM=hassioaddons/base:2.3.2
+ARG BUILD_FROM=hassioaddons/base:3.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
 # Install packages
 # hadolint ignore=DL3003
 RUN \
-     apk add --no-cache --virtual .build-dependencies \
-          yarn=1.7.0-r0 \
-          git=2.18.1-r0 \
-     \
-     && apk add --no-cache \
-          nodejs-current=9.11.1-r2 \
-          nginx=1.14.2-r0 \
-     \
-     && git clone --branch "v0.5.0" --depth=1 \
-          "https://github.com/timmo001/home-panel-api.git" /opt/api \
-     \
-     && curl -J -L -o /tmp/panel.zip \
-          "https://github.com/timmo001/home-panel/releases/download/v0.7.0/home-panel-built.zip" \
-     && unzip -d /tmp /tmp/panel.zip \
-     && mv /tmp/build /opt/panel \
-     \
-     && cd /opt/api \
-     && yarn install \
-     \
-     && yarn cache clean \
-     && apk del --purge .build-dependencies \
-     && rm -fr /tmp/*
+    apk add --no-cache --virtual .build-dependencies \
+        yarn=1.12.3-r0 \
+        git=2.20.1-r0 \
+    \
+    && apk add --no-cache \
+        nginx=1.14.2-r0 \
+        nodejs-current=11.3.0-r0 \
+    \
+    && git clone --branch "v0.5.0" --depth=1 \
+        "https://github.com/timmo001/home-panel-api.git" /opt/api \
+    \
+    && curl -J -L -o /tmp/panel.zip \
+        "https://github.com/timmo001/home-panel/releases/download/v0.7.0/home-panel-built.zip" \
+    && unzip -d /tmp /tmp/panel.zip \
+    && mv /tmp/build /opt/panel \
+    \
+    && cd /opt/api \
+    && yarn install \
+    \
+    && yarn cache clean \
+    && apk del --purge .build-dependencies \
+    && rm -fr /tmp/*
 
 # Copy root filesystem
 COPY rootfs /

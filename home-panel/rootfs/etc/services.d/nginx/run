@@ -1,13 +1,11 @@
-#!/bin/bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: Home Panel
 # Runs the NGINX daemon
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
+bashio::log.info "Starting NGINX..."
 
-hass.log.info "Starting NGINX..."
-if hass.config.true 'ssl'; then
+if bashio::config.true 'ssl'; then
     options='/etc/nginx/nginx-ssl.conf'
 else
     options='/etc/nginx/nginx.conf'

@@ -1,17 +1,14 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: Home Panel
 # This copies the configs to their respective locations
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
-
 declare config_file
 
-config_file="/config/$(hass.config.get 'config_file')"
+config_file="/config/$(bashio::config 'config_file')"
 
-if ! hass.file_exists "${config_file}"; then
-  hass.log.info "Config file does not exist. Creating.."
+if ! bashio::fs.file_exists "${config_file}"; then
+  bashio::log.info "Config file does not exist. Creating.."
   cp /etc/home-panel/home-panel-config.default.json "${config_file}"
-  hass.log.info "Created. You should now edit this file at '${config_file}'"
+  bashio::log.info "Created. You should now edit this file at '${config_file}'"
 fi
