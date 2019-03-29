@@ -72,8 +72,7 @@ Example add-on configuration:
     "log_level": "info",
     "ssl": true,
     "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem",
-    "config_file": "home-panel-config.json"
+    "keyfile": "privkey.pem"
 }
 ```
 
@@ -111,14 +110,6 @@ The certificate file to use for SSL.
 The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is default for Hass.io_
-
-### Option: `config_file`
-
-The location of your config.json in `/config/`. More information on
- configuration [here][config]. You can edit the config file while the
- addon is running. Just refresh the app's page.
-
-**Note**: _The file MUST be stored in `/config/`._
 
 ## Changelog & Releases
 

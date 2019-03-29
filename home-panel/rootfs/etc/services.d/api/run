@@ -9,8 +9,6 @@ cd /opt/api \
     || bashio::exit.nok "Could not change into API directory"
 
 LOG_LEVEL=$(bashio::config 'log_level')
-DB_PATH=/config/home-panel.db
-CONFIG_PATH=/config/$(bashio::config 'config_file')
 
 if bashio::config.true 'ssl'; then
     SSL_PATH_CERT="/ssl/$(bashio::config 'certfile')"
@@ -18,9 +16,7 @@ if bashio::config.true 'ssl'; then
 fi
 
 export LOG_LEVEL
-export DB_PATH
-export CONFIG_PATH
 export SSL_PATH_CERT
 export SSL_PATH_KEY
 
-exec node index.js
+exec node src/

@@ -2,24 +2,32 @@ ARG BUILD_FROM=hassioaddons/base:3.0.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
+# Copy root filesystem
+COPY rootfs /
+
 # Install packages
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        yarn=1.12.3-r0 \
         git=2.20.1-r0 \
+        openssl=1.1.1b-r1 \
+        yarn=1.12.3-r0 \
     \
     && apk add --no-cache \
         nginx=1.14.2-r0 \
         nodejs-current=11.3.0-r0 \
     \
-    && git clone --branch "v0.5.0" --depth=1 \
-        "https://github.com/timmo001/home-panel-api.git" /opt/api \
-    \
     && curl -J -L -o /tmp/panel.zip \
-        "https://github.com/timmo001/home-panel/releases/download/v0.7.0/home-panel-built.zip" \
+        "https://github.com/timmo001/home-panel/releases/download/v0.8.0/home-panel-built.zip" \
     && unzip -d /tmp /tmp/panel.zip \
     && mv /tmp/build /opt/panel \
+    \
+    && git clone --branch "v0.8.0" --depth=1 \
+        "https://github.com/timmo001/home-panel.git" /tmp/panel \
+    && mv /tmp/panel/api /opt/api \
+    \
+    && mv /etc/home-panel/default.json /opt/api/config \
+    && sed -i "s/API_AUTH_SECRET/$(openssl rand -base64 32)/g" /opt/api/config/default.json \
     \
     && cd /opt/api \
     && yarn install \
@@ -27,9 +35,6 @@ RUN \
     && yarn cache clean \
     && apk del --purge .build-dependencies \
     && rm -fr /tmp/*
-
-# Copy root filesystem
-COPY rootfs /
 
 # Build arguments
 ARG BUILD_ARCH
