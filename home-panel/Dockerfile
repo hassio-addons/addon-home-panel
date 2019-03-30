@@ -10,7 +10,6 @@ COPY rootfs /
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         git=2.20.1-r0 \
-        openssl=1.1.1b-r1 \
         yarn=1.12.3-r0 \
     \
     && apk add --no-cache \
@@ -25,9 +24,6 @@ RUN \
     && git clone --branch "v0.8.0" --depth=1 \
         "https://github.com/timmo001/home-panel.git" /tmp/panel \
     && mv /tmp/panel/api /opt/api \
-    \
-    && mv /etc/home-panel/default.json /opt/api/config \
-    && sed -i "s/API_AUTH_SECRET/$(openssl rand -base64 32)/g" /opt/api/config/default.json \
     \
     && cd /opt/api \
     && yarn install \
