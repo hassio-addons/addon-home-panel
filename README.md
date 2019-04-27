@@ -35,8 +35,6 @@ A touch-compatible web frontend for controlling the home. Integrates with
 
 ![More Info Light Screenshot][more-info-light]
 
-![Radio Screenshot][radio]
-
 ![Forest Theme Screenshot][forest-theme]
 
 ## Installation
@@ -216,7 +214,6 @@ SOFTWARE.
 [midnight-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/midnight-theme.png
 [more-info-light]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info-light.png
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
-[radio]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/radio.png
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-home-panel.svg
 [releases]: https://github.com/hassio-addons/addon-home-panel/releases
