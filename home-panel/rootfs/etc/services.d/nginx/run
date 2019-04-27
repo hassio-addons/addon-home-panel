@@ -3,12 +3,13 @@
 # Community Hass.io Add-ons: Home Panel
 # Runs the NGINX daemon
 # ==============================================================================
-bashio::log.info "Starting NGINX..."
+# Wait for the API to start
+bashio::net.wait_for 3234
 
-if bashio::config.true 'ssl'; then
-    options='/etc/nginx/nginx-ssl.conf'
-else
-    options='/etc/nginx/nginx.conf'
+# Disable HA Authentication if front door is open
+if bashio::config.true 'leave_front_door_open'; then
+    export DISABLE_HA_AUTHENTICATION=true
 fi
 
-exec nginx -c "$options"
+bashio::log.info "Starting NGINX..."
+exec nginx
