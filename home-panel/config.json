@@ -2,7 +2,7 @@
   "name": "Home Panel",
   "version": "dev",
   "slug": "home-panel",
-  "description": "A touch-compatible web frontend for controlling the home.",
+  "description": "A touch-compatible web frontend for controlling the home",
   "url": "https://github.com/hassio-addons/addon-home-panel",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:80]",
   "startup": "application",
@@ -30,6 +30,7 @@
     "3234/tcp": "API"
   },
   "map": [
+    "config:rw",
     "ssl"
   ],
   "options": {
