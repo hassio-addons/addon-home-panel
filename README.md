@@ -51,6 +51,7 @@ comparison to installing any other Hass.io add-on.
     (e.g. `https://hassio.local:8234`).
 1. Create a new account.
 1. Once logged in, There will be a prompt to login to Home Assistant.
+1. Please see [here][config] for how to configurre Home Panel
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
@@ -191,7 +192,7 @@ SOFTWARE.
 [buymeacoffee]: https://www.buymeacoffee.com/timmo
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-home-panel.svg
 [commits]: https://github.com/hassio-addons/addon-home-panel/commits/master
-[config]: https://timmo.dev/home-panel/configuration/
+[config]: https://timmo.dev/home-panel/configui/
 [contributors]: https://github.com/hassio-addons/addon-home-panel/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
