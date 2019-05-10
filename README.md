@@ -51,7 +51,7 @@ comparison to installing any other Hass.io add-on.
     (e.g. `https://hassio.local:8234`).
 1. Create a new account.
 1. Once logged in, There will be a prompt to login to Home Assistant.
-1. Please see [here][config] for how to configurre Home Panel
+1. Please see [here][config] for how to configure Home Panel
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
