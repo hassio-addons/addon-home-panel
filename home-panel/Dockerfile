@@ -17,11 +17,11 @@ RUN \
         nodejs-current=11.3.0-r0 \
     \
     && curl -J -L -o /tmp/panel.zip \
-        "https://github.com/timmo001/home-panel/releases/download/v0.10.0/home-panel-built.zip" \
+        "https://github.com/timmo001/home-panel/releases/download/v1.0.0/home-panel-built.zip" \
     && unzip -d /tmp /tmp/panel.zip \
     && mv /tmp/build /opt/panel \
     \
-    && git clone --branch "v0.10.0" --depth=1 \
+    && git clone --branch "v1.0.0" --depth=1 \
         "https://github.com/timmo001/home-panel.git" /tmp/panel \
     && mv /tmp/panel/api /opt/api \
     \
