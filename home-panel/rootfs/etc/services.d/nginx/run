@@ -4,7 +4,7 @@
 # Runs the Nginx daemon
 # ==============================================================================
 
-# Wait for thelounge to become available
+# Wait for Home Panel to become available
 bashio::net.wait_for 8234
 
 bashio::log.info "Starting NGinx..."
