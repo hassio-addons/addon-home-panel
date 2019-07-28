@@ -1,15 +1,12 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: Home Panel
-# Runs the NGINX daemon
+# Runs the Nginx daemon
 # ==============================================================================
-# Wait for the API to start
-bashio::net.wait_for 3234
 
-# Disable HA Authentication if front door is open
-if bashio::config.true 'leave_front_door_open'; then
-    export DISABLE_HA_AUTHENTICATION=true
-fi
+# Wait for thelounge to become available
+bashio::net.wait_for 8234
 
-bashio::log.info "Starting NGINX..."
+bashio::log.info "Starting NGinx..."
+
 exec nginx

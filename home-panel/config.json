@@ -19,12 +19,10 @@
   "homeassistant_api": true,
   "ingress": false,
   "ports": {
-    "80/tcp": 8234,
-    "3234/tcp": 3234
+    "80/tcp": null
   },
   "ports_description": {
-    "80/tcp": "Web UI",
-    "3234/tcp": "API"
+    "80/tcp": "Web UI (Not required for Hass.io Ingress)"
   },
   "map": [
     "config:rw",
@@ -39,6 +37,7 @@
     "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)?",
     "ssl": "bool",
     "certfile": "str",
-    "keyfile": "str"
+    "keyfile": "str",
+    "leave_front_door_open": "bool?"
   }
 }

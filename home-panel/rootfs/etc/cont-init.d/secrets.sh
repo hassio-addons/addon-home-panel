@@ -4,4 +4,5 @@
 # This updates the internal auth secret for the API
 # ==============================================================================
 # shellcheck disable=2094,2016
-bashio::jq /etc/home-panel/default.json '.authentication.secret="$(openssl rand -base64 32)"' > /opt/api/config/default.json
+# TODO: Fix this
+# bashio::jq /opt/panel/config/default.json '.authentication.secret="$(openssl rand -base64 32)"' > /opt/panel/config/default.json
