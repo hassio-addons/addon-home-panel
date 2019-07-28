@@ -20,6 +20,12 @@ RUN \
     && unzip -d /tmp /tmp/panel.zip \
     && mv /tmp/build /opt/panel \
     \
+    && mkdir -p /tmp/panel \
+    # TODO: Replace with actual download
+    && curl -J -L -o /tmp/panel.zip \
+        "https://gitlab.com/timmo/home-panel/-/jobs/260786971/artifacts/download" \
+    && unzip -d /tmp/panel /tmp/panel.zip \
+    && mv /tmp/panel/build/* /opt/panel/public \
     \
     && cd /opt/panel \
     && yarn install \
