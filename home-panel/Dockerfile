@@ -9,12 +9,12 @@ COPY rootfs /
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        git=2.20.1-r0 \
-        yarn=1.12.3-r0 \
+        git=2.22.0-r0 \
+        yarn=1.16.0-r0 \
     \
     && apk add --no-cache \
-        nginx=1.14.2-r1 \
-        nodejs-current=11.3.0-r0 \
+        nginx=1.16.0-r2 \
+        nodejs-current=12.4.0-r0 \
     \
     && curl -J -L -o /tmp/panel.zip \
         "https://github.com/timmo001/home-panel/releases/download/v1.0.0/home-panel-built.zip" \
