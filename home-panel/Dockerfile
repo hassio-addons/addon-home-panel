@@ -17,7 +17,7 @@ RUN \
         nodejs-current=12.4.0-r0 \
     \
     && curl -J -L -o /tmp/panel.zip \
-        "https://github.com/timmo001/home-panel/releases/download/v1.0.0/home-panel-built.zip" \
+        "https://github.com/timmo001/home-panel/releases/download/v1.0.0/home-panel-built-v0.10.0.zip" \
     && unzip -d /tmp /tmp/panel.zip \
     && mv /tmp/build /opt/panel \
     \
