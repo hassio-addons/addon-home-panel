@@ -1,10 +1,13 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: Home Panel
-# Configures NGINX for use with thelounge
+# Configures NGINX for use with Home Panel
 # ==============================================================================
 declare port
 declare certfile
+declare hassio_dns
+declare ingress_interface
+declare ingress_port
 declare keyfile
 
 port=$(bashio::addon.port 80)
@@ -23,3 +26,11 @@ if bashio::var.has_value "${port}"; then
         mv /etc/nginx/servers/direct.disabled /etc/nginx/servers/direct.conf
     fi
 fi
+
+ingress_port=$(bashio::addon.ingress_port)
+ingress_interface=$(bashio::addon.ip_address)
+sed -i "s/%%port%%/${ingress_port}/g" /etc/nginx/servers/ingress.conf
+sed -i "s/%%interface%%/${ingress_interface}/g" /etc/nginx/servers/ingress.conf
+
+hassio_dns=$(bashio::dns.host)
+sed -i "s/%%hassio_dns%%/${hassio_dns}/g" /etc/nginx/includes/resolver.conf
