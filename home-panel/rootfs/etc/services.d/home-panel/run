@@ -16,4 +16,4 @@ export LOG_LEVEL
 export SSL_SUPPRESS_WARNING
 export SUPPRESS_ADDRESS
 
-exec node src/
+exec yarn run compile && node lib/
