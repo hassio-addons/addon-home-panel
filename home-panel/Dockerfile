@@ -44,12 +44,12 @@ ARG BUILD_VERSION
 # Labels
 LABEL \
     io.hass.name="Home Panel" \
-    io.hass.description="A touch-compatible web frontend for controlling the home." \
+    io.hass.description="A web frontend for controlling the home." \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Timmo <contact@timmo.xyz>" \
-    org.label-schema.description="A touch-compatible web frontend for controlling the home." \
+    org.label-schema.description="A web frontend for controlling the home." \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Home Panel" \
     org.label-schema.schema-version="1.0" \

@@ -19,11 +19,11 @@
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
-A touch-compatible web frontend for controlling the home.
+A web frontend for controlling the home.
 
 ## About
 
-A touch-compatible web frontend for controlling the home. Integrates with
+A web frontend for controlling the home. Integrates with
  [Home Assistant][hass] as an alternative / additional frontend. Uses a
  customisable and themeable card based UI which can be used on a touch screen.
 
@@ -33,9 +33,7 @@ A touch-compatible web frontend for controlling the home. Integrates with
 
 ![Midnight Theme Screenshot][midnight-theme]
 
-![More Info Light Screenshot][more-info-light]
-
-![Forest Theme Screenshot][forest-theme]
+![Settings Screenshot][settings-screen]
 
 ## Installation
 
@@ -47,10 +45,9 @@ comparison to installing any other Hass.io add-on.
 1. Configure the "Home Panel" add-on. (See below)
 1. Start the "Home Panel" add-on.
 1. Check the logs of the "Home Panel" add-on to see it in action.
-1. Surf to your Hass.io instance and use port `8234`
-    (e.g. `https://hassio.local:8234`).
+1. Click "Open Web UI".
 1. Create a new account.
-1. Once logged in, There will be a prompt to login to Home Assistant.
+1. Once logged in, log into Home Assistant via the sidebar.
 1. Please see [here][config] for how to configure Home Panel
 
 **NOTE**: Do not add this repository to Hass.io, please use:
@@ -199,7 +196,6 @@ SOFTWARE.
 [discord]: https://discord.me/hassioaddons
 [dockerhub]: https://hub.docker.com/r/hassioaddons/home-panel
 [docs]: https://timmo.dev/home-panel/
-[forest-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/forest-theme.png
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597?u=timmo001
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-home-panel/badges/master/pipeline.svg
@@ -213,11 +209,11 @@ SOFTWARE.
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-home-panel.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2019.svg
 [midnight-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/midnight-theme.png
-[more-info-light]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/more-info-light.png
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-home-panel.svg
 [releases]: https://github.com/hassio-addons/addon-home-panel/releases
 [repository]: https://github.com/hassio-addons/repository
 [semver]: http://semver.org/spec/v2.0.0.htm
+[settings-screen]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/settings-main.png
 [timmo]: https://github.com/timmo001
