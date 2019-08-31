@@ -1,0 +1,19 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Community Hass.io Add-ons: Home Panel
+# Starts server to serve the app
+# ==============================================================================
+bashio::log.info "Run Home Panel.."
+
+cd /opt/panel \
+    || bashio::exit.nok "Could not change into app directory"
+
+LOG_LEVEL=$(bashio::config 'log_level')
+SSL_SUPPRESS_WARNING="true"
+SUPPRESS_ADDRESS="true"
+
+export LOG_LEVEL
+export SSL_SUPPRESS_WARNING
+export SUPPRESS_ADDRESS
+
+exec node src/

@@ -13,19 +13,22 @@ RUN \
         yarn=1.16.0-r0 \
     \
     && apk add --no-cache \
-        nginx=1.16.0-r2 \
+        nginx=1.16.1-r0 \
         nodejs-current=12.4.0-r0 \
     \
+    # TODO: Replace with release tag
+    && git clone --branch "master" --depth=1 \
+        "https://github.com/timmo001/home-panel.git" /tmp/api \
+    && mv /tmp/api/api /opt/panel \
+    \
+    && mkdir -p /tmp/panel \
+    # TODO: Replace with actual download
     && curl -J -L -o /tmp/panel.zip \
-        "https://github.com/timmo001/home-panel/releases/download/v1.0.0/home-panel-built-v0.10.0.zip" \
-    && unzip -d /tmp /tmp/panel.zip \
-    && mv /tmp/build /opt/panel \
+        "https://gitlab.com/timmo/home-panel/-/jobs/284851910/artifacts/download" \
+    && unzip -d /tmp/panel /tmp/panel.zip \
+    && mv /tmp/panel/build/* /opt/panel/public \
     \
-    && git clone --branch "v1.0.0" --depth=1 \
-        "https://github.com/timmo001/home-panel.git" /tmp/panel \
-    && mv /tmp/panel/api /opt/api \
-    \
-    && cd /opt/api \
+    && cd /opt/panel \
     && yarn install \
     \
     && yarn cache clean \
