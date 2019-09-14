@@ -15,7 +15,7 @@ RUN \
     && apk add --no-cache \
         nginx=1.16.1-r0 \
         nodejs-current=12.4.0-r0 \
-        openssl=1.1.1c-r0 \
+        openssl=1.1.1d-r0 \
     \
     # TODO: Replace with release tag
     && git clone --branch "master" --depth=1 \
