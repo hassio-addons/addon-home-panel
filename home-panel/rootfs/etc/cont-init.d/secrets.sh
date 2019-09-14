@@ -10,5 +10,5 @@ fi
 
 if [ "$(grep -i '../db' /opt/panel/config/default.json)" = 0 ]; then
     # Force database to use /data
-    sed -i -e "s/../db//data/g" /opt/panel/config/default.json
+    sed -i "s#../db#/data#g" /opt/panel/config/default.json
 fi
