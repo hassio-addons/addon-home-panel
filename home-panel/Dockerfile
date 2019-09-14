@@ -17,15 +17,13 @@ RUN \
         nodejs-current=12.4.0-r0 \
         openssl=1.1.1d-r0 \
     \
-    # TODO: Replace with release tag
-    && git clone --branch "master" --depth=1 \
+    && git clone --branch "v2.0.0" --depth=1 \
         "https://github.com/timmo001/home-panel.git" /tmp/api \
     && mv /tmp/api/api /opt/panel \
     \
     && mkdir -p /tmp/panel \
-    # TODO: Replace with actual download
     && curl -J -L -o /tmp/panel.zip \
-        "https://gitlab.com/timmo/home-panel/-/jobs/295398245/artifacts/download" \
+        "https://github.com/timmo001/home-panel/releases/download/v2.0.0/home-panel-built.zip" \
     && unzip -d /tmp/panel /tmp/panel.zip \
     && mv /tmp/panel/build/* /opt/panel/public \
     \
