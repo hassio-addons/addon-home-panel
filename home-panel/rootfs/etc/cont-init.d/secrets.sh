@@ -14,7 +14,9 @@ fi
 key=$(cat /data/secret.txt)
 
 # Set secret to persistent secret file
-sed -i "s/API_AUTH_SECRET/${key}/g" /opt/panel/config/default.json
+bashio::log.info "Update secret in config"
+sed -i "s#API_AUTH_SECRET#${key}#g" /opt/panel/config/default.json
 
 # Set database to /data
+bashio::log.info "Update database path in config"
 sed -i "s#../db#/data#g" /opt/panel/config/default.json
