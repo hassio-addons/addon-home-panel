@@ -31,9 +31,11 @@ A web frontend for controlling the home. Integrates with
 
 ## Screenshots
 
-![Midnight Theme Screenshot][midnight-theme]
+![Main Screen Screenshot][screen-main]
 
-![Settings Screenshot][settings-screen]
+![Configuration Screenshot][screen-configuration-main]
+
+![Showcase Purple Space][showcase-purple-space]
 
 ## Installation
 
@@ -208,12 +210,13 @@ SOFTWARE.
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-home-panel.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2019.svg
-[midnight-theme]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/midnight-theme.png
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-home-panel.svg
 [releases]: https://github.com/hassio-addons/addon-home-panel/releases
 [repository]: https://github.com/hassio-addons/repository
+[screen-configuration-main]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/screen-configuration-main.png
+[screen-main]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/screen-main.png
 [semver]: http://semver.org/spec/v2.0.0.htm
-[settings-screen]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/settings-main.png
+[showcase-purple-space]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/docs/showcase/timmo/purple-space.png
 [timmo]: https://github.com/timmo001
