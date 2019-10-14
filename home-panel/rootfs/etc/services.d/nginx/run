@@ -3,7 +3,6 @@
 # Community Hass.io Add-ons: Home Panel
 # Runs the Nginx daemon
 # ==============================================================================
-
 # Wait for Home Panel to become available
 bashio::net.wait_for 8234
 
