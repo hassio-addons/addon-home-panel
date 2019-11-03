@@ -17,13 +17,13 @@ RUN \
         nodejs-current=12.4.0-r0 \
         openssl=1.1.1d-r0 \
     \
-    && git clone --branch "v2.4.8" --depth=1 \
+    && git clone --branch "v2.4.9" --depth=1 \
         "https://github.com/timmo001/home-panel.git" /tmp/api \
     && mv /tmp/api/api /opt/panel \
     \
     && mkdir -p /tmp/panel \
     && curl -J -L -o /tmp/panel.zip \
-        "https://github.com/timmo001/home-panel/releases/download/v2.4.8/home-panel-built.zip" \
+        "https://github.com/timmo001/home-panel/releases/download/v2.4.9/home-panel-built.zip" \
     && unzip -d /tmp/panel /tmp/panel.zip \
     && mv /tmp/panel/build/* /opt/panel/public \
     \
