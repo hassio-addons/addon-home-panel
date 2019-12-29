@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:5.0.1
+ARG BUILD_FROM=hassioaddons/base:6.0.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -9,13 +9,13 @@ COPY rootfs /
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        git=2.22.2-r0 \
-        yarn=1.16.0-r0 \
+        git=2.24.1-r0 \
+        yarn=1.19.2-r0 \
     \
     && apk add --no-cache \
-        nginx=1.16.1-r1 \
-        nodejs-current=12.4.0-r0 \
-        openssl=1.1.1d-r0 \
+        nginx=1.16.1-r4 \
+        nodejs-current=13.1.0-r0 \
+        openssl=1.1.1d-r3 \
     \
     && git clone --branch "v2.4.10" --depth=1 \
         "https://github.com/timmo001/home-panel.git" /tmp/api \
