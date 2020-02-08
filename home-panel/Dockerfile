@@ -13,7 +13,7 @@ RUN \
         yarn=1.19.2-r0 \
     \
     && apk add --no-cache \
-        nginx=1.16.1-r4 \
+        nginx=1.16.1-r6 \
         nodejs-current=13.1.0-r0 \
         openssl=1.1.1d-r3 \
     \
