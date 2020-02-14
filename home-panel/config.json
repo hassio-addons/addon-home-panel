@@ -25,7 +25,7 @@
     "80/tcp": null
   },
   "ports_description": {
-    "80/tcp": "Web UI (Not required for Hass.io Ingress)"
+    "80/tcp": "Web UI (Not required for Ingress)"
   },
   "map": [
     "config:rw",

@@ -1,7 +1,7 @@
 ---
 repository:
-  description: "Home Panel - Community Hass.io Add-on for Home Assistant"
-  topics: home-panel, home-automation, home-assistant, hassio, hassio-addons, hass, javascript, reactjs
+  description: "Home Panel - Home Assistant Community Add-ons"
+  topics: home-panel, home-automation, home-assistant, addon, addons, javascript, reactjs
   homepage: https://addons.community
   private: false
   has_issues: true
