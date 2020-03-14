@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Home Panel
+# Home Assistant Community Add-on: Home Panel
 # This updates the internal auth secret for the API
 # ==============================================================================
 declare key

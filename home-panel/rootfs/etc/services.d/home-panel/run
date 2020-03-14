@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Home Panel
+# Home Assistant Community Add-on: Home Panel
 # Starts server to serve the app
 # ==============================================================================
 bashio::log.info "Run Home Panel.."

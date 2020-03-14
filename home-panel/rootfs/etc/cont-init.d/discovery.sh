@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Home Panel
+# Home Assistant Community Add-on: Home Panel
 # Sends discovery information to Home Assistant.
 # ==============================================================================
 declare config
