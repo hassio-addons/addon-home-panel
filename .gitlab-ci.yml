@@ -6,8 +6,6 @@ variables:
   ADDON_SLUG: "home-panel"
   ADDON_TARGET: "home-panel"
 
-  ADDON_LEGACY_TAGS: "true"
-
   ADDON_AARCH64_BASE: "hassioaddons/base-aarch64:7.0.5"
   ADDON_AMD64_BASE: "hassioaddons/base-amd64:7.0.5"
   ADDON_ARMHF_BASE: "hassioaddons/base-armhf:7.0.5"
