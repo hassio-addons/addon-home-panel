@@ -9,7 +9,7 @@ COPY rootfs /
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        git=2.24.1-r0 \
+        git=2.24.3-r0 \
         yarn=1.19.2-r0 \
     \
     && apk add --no-cache \
