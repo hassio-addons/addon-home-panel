@@ -15,7 +15,7 @@ RUN \
     && apk add --no-cache \
         nginx=1.16.1-r6 \
         nodejs-current=13.1.0-r0 \
-        openssl=1.1.1d-r3 \
+        openssl=1.1.1g-r0 \
     \
     && git clone --branch "v2.8.1" --depth=1 \
         "https://github.com/timmo001/home-panel.git" /tmp/api \
