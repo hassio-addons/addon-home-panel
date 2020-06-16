@@ -18,13 +18,13 @@ RUN \
         openssl=1.1.1g-r0 \
         yarn=1.19.2-r0 \
     \
-    && git clone --branch "v2.8.1" --depth=1 \
+    && git clone --branch "v2.9.1" --depth=1 \
         "https://github.com/timmo001/home-panel.git" /tmp/api \
     && mv /tmp/api/api /opt/panel \
     \
     && mkdir -p /tmp/panel \
     && curl -J -L -o /tmp/panel.zip \
-        "https://github.com/timmo001/home-panel/releases/download/v2.8.1/home-panel-built.zip" \
+        "https://github.com/timmo001/home-panel/releases/download/v2.9.1/home-panel-built.zip" \
     && unzip -d /tmp/panel /tmp/panel.zip \
     && mv /tmp/panel/build/* /opt/panel/public \
     \
