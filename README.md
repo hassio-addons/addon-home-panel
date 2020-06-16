@@ -131,7 +131,7 @@ SOFTWARE.
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-home-panel.svg
 [releases]: https://github.com/hassio-addons/addon-home-panel/releases
 [repository]: https://github.com/hassio-addons/repository
-[screen-configuration-main]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/screen-configuration-main.png
-[screen-main]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/resources/screen-main.png
-[showcase-purple-space]: https://raw.githubusercontent.com/timmo001/home-panel/master/docs/docs/showcase/timmo/purple-space.png
+[screen-configuration-main]: https://raw.githubusercontent.com/timmo001/home-panel/master/documentation/resources/screen-configuration-main.png
+[screen-main]: https://raw.githubusercontent.com/timmo001/home-panel/master/documentation/resources/screen-main.png
+[showcase-purple-space]: https://raw.githubusercontent.com/timmo001/home-panel/master/documentation/docs/showcase/timmo/purple-space.png
 [timmo]: https://github.com/timmo001
