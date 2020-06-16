@@ -10,12 +10,12 @@ COPY rootfs /
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         git=2.24.3-r0 \
-        yarn=1.19.2-r0 \
     \
     && apk add --no-cache \
         nginx=1.18.0-r0 \
         nodejs-current=14.3.0-r0 \
         openssl=1.1.1g-r0 \
+        yarn=1.19.2-r0 \
     \
     && git clone --branch "v2.8.1" --depth=1 \
         "https://github.com/timmo001/home-panel.git" /tmp/api \
