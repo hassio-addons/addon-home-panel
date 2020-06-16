@@ -10,6 +10,7 @@ COPY rootfs /
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         git=2.26.2-r0 \
+        tar=1.32-r1 \
     \
     && apk add --no-cache \
         nginx=1.18.0-r0 \
