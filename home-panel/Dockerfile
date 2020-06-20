@@ -5,6 +5,9 @@ FROM ${BUILD_FROM}
 # Copy root filesystem
 COPY rootfs /
 
+# Set shell
+SHELL ["/bin/ash", "-o", "pipefail", "-c"]
+
 # Install packages
 # hadolint ignore=DL3003
 RUN \
