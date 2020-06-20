@@ -9,30 +9,21 @@ COPY rootfs /
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        git=2.26.2-r0 \
         tar=1.32-r1 \
     \
     && apk add --no-cache \
         nginx=1.18.0-r0 \
         nodejs-current=14.3.0-r0 \
         openssl=1.1.1g-r0 \
-        yarn=1.19.2-r0 \
+        yarn=1.22.4-r0 \
     \
-    && git clone --branch "v2.9.1" --depth=1 \
-        "https://github.com/timmo001/home-panel.git" /tmp/api \
-    && mv /tmp/api/api /opt/panel \
-    \
-    && mkdir -p /tmp/panel \
-    && curl -J -L -o /tmp/panel.zip \
-        "https://github.com/timmo001/home-panel/releases/download/v2.9.1/home-panel-built.zip" \
-    && unzip -d /tmp/panel /tmp/panel.zip \
-    && mv /tmp/panel/build/* /opt/panel/public \
+    && mkdir -p /opt/panel \
+    && curl -L -s "https://github.com/timmo001/home-panel/releases/download/v2.9.6/home-panel.tar.gz" \
+        | tar zxvf - -C /opt/panel \
     \
     && cd /opt/panel \
     && yarn install \
-    && yarn compile \
     \
-    && yarn cache clean \
     && apk del --purge .build-dependencies \
     && rm -fr /tmp/*
 

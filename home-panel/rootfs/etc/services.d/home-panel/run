@@ -12,4 +12,4 @@ SUPPRESS_URL="true"
 
 export SUPPRESS_URL
 
-exec node lib/
+exec yarn run start-precompiled
