@@ -111,7 +111,6 @@ SOFTWARE.
 [buymeacoffee]: https://www.buymeacoffee.com/timmo
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-home-panel.svg
 [commits]: https://github.com/hassio-addons/addon-home-panel/commits/master
-[config]: https://timmo.dev/home-panel/configui/
 [contributors]: https://github.com/hassio-addons/addon-home-panel/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
