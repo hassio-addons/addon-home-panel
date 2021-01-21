@@ -1,8 +1,8 @@
 # Home Assistant Community Add-on: Home Panel
 
 A web frontend for controlling the home. Integrates with
- [Home Assistant][hass] as an alternative / additional frontend. Uses a
- customisable and themeable card based UI which can be used on a touch screen.
+[Home Assistant][hass] as an alternative / additional frontend. Uses a
+customisable and themeable card based UI which can be used on a touch screen.
 
 ## Installation
 
@@ -41,7 +41,7 @@ dealing with an unknown issue. Possible values are:
 - `debug`: Shows detailed debug information.
 - `info`: Normal (usually) interesting events.
 - `warning`: Exceptional occurrences that are not errors.
-- `error`:  Runtime errors that do not require immediate action.
+- `error`: Runtime errors that do not require immediate action.
 - `fatal`: Something went terribly wrong. Add-on becomes unusable.
 
 Please note that each level automatically includes log messages from a
@@ -69,16 +69,15 @@ The private key file to use for SSL.
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
-functionality. The format of the log is based on
-[Keep a Changelog][keepchangelog].
+functionality.
 
 Releases are based on [Semantic Versioning][semver], and use the format
-of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
+of `MAJOR.MINOR.PATCH`. In a nutshell, the version will be incremented
 based on the following:
 
-- ``MAJOR``: Incompatible or major changes.
-- ``MINOR``: Backwards-compatible new features and enhancements.
-- ``PATCH``: Backwards-compatible bugfixes and package updates.
+- `MAJOR`: Incompatible or major changes.
+- `MINOR`: Backwards-compatible new features and enhancements.
+- `PATCH`: Backwards-compatible bugfixes and package updates.
 
 ## Support
 
@@ -133,7 +132,6 @@ SOFTWARE.
 [forum]: https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597?u=timmo001
 [hass]: https://www.home-assistant.io/
 [issue]: https://github.com/hassio-addons/addon-home-panel/issues
-[keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [reddit]: https://reddit.com/r/homeassistant
 [releases]: https://github.com/hassio-addons/addon-home-panel/releases
 [repository]: https://github.com/hassio-addons/repository
