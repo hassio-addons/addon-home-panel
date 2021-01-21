@@ -24,8 +24,8 @@ A web frontend for controlling the home.
 ## About
 
 A web frontend for controlling the home. Integrates with
- [Home Assistant][hass] as an alternative / additional frontend. Uses a
- customisable and themeable card based UI which can be used on a touch screen.
+[Home Assistant][hass] as an alternative / additional frontend. Uses a
+customisable and themeable card based UI which can be used on a touch screen.
 
 [:books: Read the full add-on documentation][docs]
 

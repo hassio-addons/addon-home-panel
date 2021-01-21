@@ -1,8 +1,8 @@
 # Home Assistant Community Add-on: Home Panel
 
 A web frontend for controlling the home. Integrates with
- [Home Assistant][hass] as an alternative / additional frontend. Uses a
- customisable and themeable card based UI which can be used on a touch screen.
+[Home Assistant][hass] as an alternative / additional frontend. Uses a
+customisable and themeable card based UI which can be used on a touch screen.
 
 ## Installation
 
@@ -41,7 +41,7 @@ dealing with an unknown issue. Possible values are:
 - `debug`: Shows detailed debug information.
 - `info`: Normal (usually) interesting events.
 - `warning`: Exceptional occurrences that are not errors.
-- `error`:  Runtime errors that do not require immediate action.
+- `error`: Runtime errors that do not require immediate action.
 - `fatal`: Something went terribly wrong. Add-on becomes unusable.
 
 Please note that each level automatically includes log messages from a
@@ -73,12 +73,12 @@ functionality. The format of the log is based on
 [Keep a Changelog][keepchangelog].
 
 Releases are based on [Semantic Versioning][semver], and use the format
-of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
+of `MAJOR.MINOR.PATCH`. In a nutshell, the version will be incremented
 based on the following:
 
-- ``MAJOR``: Incompatible or major changes.
-- ``MINOR``: Backwards-compatible new features and enhancements.
-- ``PATCH``: Backwards-compatible bugfixes and package updates.
+- `MAJOR`: Incompatible or major changes.
+- `MINOR`: Backwards-compatible new features and enhancements.
+- `PATCH`: Backwards-compatible bugfixes and package updates.
 
 ## Support
 
