@@ -10,7 +10,7 @@
 ![Supports amd64 Architecture][amd64-shield]
 ![Supports i386 Architecture][i386-shield]
 
-[![GitLab CI][gitlabci-shield]][gitlabci]
+[![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
@@ -110,16 +110,16 @@ SOFTWARE.
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/timmo
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-home-panel.svg
-[commits]: https://github.com/hassio-addons/addon-home-panel/commits/master
+[commits]: https://github.com/hassio-addons/addon-home-panel/commits/main
 [contributors]: https://github.com/hassio-addons/addon-home-panel/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/hassio-addons/addon-home-panel/blob/master/home-panel/DOCS.md
+[docs]: https://github.com/hassio-addons/addon-home-panel/blob/main/home-panel/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/home-panel-a-touch-compatible-webapp-for-controlling-the-home/62597?u=timmo001
-[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-home-panel/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/hassio-addons/addon-home-panel/pipelines
+[github-actions-shield]: https://github.com/hassio-addons/addon-home-panel/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/addon-home-panel/actions
 [hass]: https://www.home-assistant.io/
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-home-panel/issues
