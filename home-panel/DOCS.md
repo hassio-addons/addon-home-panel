@@ -9,14 +9,14 @@ customisable and themeable card based UI which can be used on a touch screen.
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Home Assistant add-on.
 
-1. Search for the "Home Assistant” add-on in the add-on store and install it.
+1. Search for the "Home Panel" add-on in the add-on store and install it.
 1. Configure the "Home Panel" add-on. (See below)
 1. Start the "Home Panel" add-on.
 1. Check the logs of the "Home Panel" add-on to see it in action.
 1. Click "Open Web UI".
 1. Create a new account.
 1. Once logged in, log into Home Assistant via the sidebar.
-1. Please see [here][config] for how to configure Home Panel
+1. Please see [here][config] for how to configure Home Panel.
 
 ## Configuration
 
