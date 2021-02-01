@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:8.0.3
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.2
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -12,13 +12,13 @@ SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        tar=1.32-r1 \
+        tar=1.33-r1 \
     \
     && apk add --no-cache \
-        nginx=1.18.0-r0 \
-        nodejs-current=14.5.0-r0 \
-        openssl=1.1.1g-r0 \
-        yarn=1.22.4-r0 \
+        nginx=1.18.0-r13 \
+        nodejs-current=15.5.1-r0 \
+        openssl=1.1.1i-r0 \
+        yarn=1.22.10-r0 \
     \
     && mkdir -p /opt/panel \
     && curl -L -s "https://github.com/timmo001/home-panel/releases/download/v2.10.2/home-panel.tar.gz" \
@@ -27,7 +27,7 @@ RUN \
     && cd /opt/panel \
     && yarn install \
     \
-    && apk del --purge .build-dependencies \
+    && apk del --no-cache --purge .build-dependencies \
     && rm -fr /tmp/*
 
 # Build arguments
