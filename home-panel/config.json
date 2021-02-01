@@ -6,7 +6,6 @@
   "url": "https://github.com/hassio-addons/addon-home-panel",
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "init": false,
-  "hassio_api": true,
   "homeassistant": "0.91.4",
   "homeassistant_api": true,
   "ingress": true,
