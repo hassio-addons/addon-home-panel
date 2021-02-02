@@ -6,10 +6,7 @@
   "url": "https://github.com/hassio-addons/addon-home-panel",
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "init": false,
-  "homeassistant": "0.91.4",
-  "homeassistant_api": true,
   "ingress": true,
-  "ingress_port": 1337,
   "panel_icon": "mdi:home",
   "ports": {
     "80/tcp": null
@@ -27,7 +24,6 @@
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "ssl": "bool",
     "certfile": "str",
-    "keyfile": "str",
-    "leave_front_door_open": "bool?"
+    "keyfile": "str"
   }
 }
