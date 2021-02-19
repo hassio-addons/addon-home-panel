@@ -24,7 +24,7 @@ RUN \
     && curl -L -s "https://github.com/timmo001/home-panel/releases/download/v2.11.2/home-panel.tar.gz" \
         | tar zxvf - -C /opt/panel \
     \
-    && cd /opt/panel \
+    && cd /opt/panel/output \
     && yarn install \
     \
     && apk del --no-cache --purge .build-dependencies \
