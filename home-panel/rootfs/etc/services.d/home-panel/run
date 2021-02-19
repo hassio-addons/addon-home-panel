@@ -5,7 +5,7 @@
 # ==============================================================================
 bashio::log.info "Run Home Panel.."
 
-cd /opt/panel/backend \
+cd /opt/panel \
     || bashio::exit.nok "Could not change into app directory"
 
 SUPPRESS_URL="true"
