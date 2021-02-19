@@ -21,10 +21,10 @@ RUN \
         yarn=1.22.10-r0 \
     \
     && mkdir -p /opt/panel \
-    && curl -L -s "https://github.com/timmo001/home-panel/releases/download/v2.11.2/home-panel.tar.gz" \
+    && curl -L -s "https://github.com/timmo001/home-panel/releases/download/v2.11.4/home-panel.tar.gz" \
         | tar zxvf - -C /opt/panel \
     \
-    && cd /opt/panel/output \
+    && cd /opt/panel \
     && yarn install \
     \
     && apk del --no-cache --purge .build-dependencies \
