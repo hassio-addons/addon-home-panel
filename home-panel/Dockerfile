@@ -16,7 +16,7 @@ RUN \
     \
     && apk add --no-cache \
         nginx=1.18.0-r13 \
-        nodejs-current=15.5.1-r0 \
+        nodejs-current=15.10.0-r0 \
         openssl=1.1.1j-r0 \
         yarn=1.22.10-r0 \
     \
