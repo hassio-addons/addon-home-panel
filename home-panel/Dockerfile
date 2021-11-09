@@ -27,6 +27,7 @@ RUN \
     && cd /opt/panel \
     && yarn install \
     \
+    && yarn cache clean \
     && apk del --no-cache --purge .build-dependencies \
     && rm -fr /tmp/*
 
