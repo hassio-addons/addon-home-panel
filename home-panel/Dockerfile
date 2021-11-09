@@ -21,7 +21,7 @@ RUN \
         yarn=1.22.10-r0 \
     \
     && mkdir -p /opt/panel \
-    && curl -L -s "https://github.com/timmo001/home-panel/releases/download/v2.11.5/home-panel.tar.gz" \
+    && curl -L -s "https://github.com/timmo001/home-panel/releases/download/v2.11.6/home-panel.tar.gz" \
         | tar zxvf - -C /opt/panel \
     \
     && cd /opt/panel \
