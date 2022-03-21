@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:10.2.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:11.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -16,9 +16,9 @@ RUN \
     \
     && apk add --no-cache \
         nginx=1.20.2-r0 \
-        nodejs-current=16.11.1-r0 \
+        nodejs=16.14.0-r \
         openssl=1.1.1n-r0 \
-        yarn=1.22.10-r0 \
+        yarn=1.22.17-r0 \
     \
     && mkdir -p /opt/panel \
     && curl -L -s "https://github.com/timmo001/home-panel/releases/download/v2.11.6/home-panel.tar.gz" \
