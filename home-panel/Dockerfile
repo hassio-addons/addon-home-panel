@@ -15,7 +15,7 @@ RUN \
         tar=1.34-r0 \
     \
     && apk add --no-cache \
-        nginx=1.20.1-r3 \
+        nginx=1.20.2-r0 \
         nodejs-current=16.11.1-r0 \
         openssl=1.1.1l-r0 \
         yarn=1.22.10-r0 \
