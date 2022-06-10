@@ -1,9 +1,9 @@
-#!/usr/bin/with-contenv bashio
+#!/command/with-contenv bashio
 # ==============================================================================
 # Home Assistant Community Add-on: Home Panel
 # Starts server to serve the app
 # ==============================================================================
-bashio::log.info "Run Home Panel.."
+bashio::log.info "Run Home Panel..."
 
 cd /opt/panel \
     || bashio::exit.nok "Could not change into app directory"

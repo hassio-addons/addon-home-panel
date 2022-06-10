@@ -1,10 +1,10 @@
-#!/usr/bin/with-contenv bashio
+#!/command/with-contenv bashio
 # ==============================================================================
 # Home Assistant Community Add-on: Home Panel
-# Runs the Nginx daemon
+# Runs the NGINX daemon
 # ==============================================================================
 # Wait for Home Panel to become available
 bashio::net.wait_for 8234
 
-bashio::log.info "Starting NGinx..."
+bashio::log.info "Starting NGINX..."
 exec nginx
