@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.3
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.7
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -17,7 +17,7 @@ RUN \
     && apk add --no-cache \
         nginx=1.22.1-r0 \
         nodejs=16.17.1-r0 \
-        openssl=1.1.1q-r0 \
+        openssl=1.1.1s-r0 \
         yarn=1.22.19-r0 \
     \
     && mkdir -p /opt/panel \
