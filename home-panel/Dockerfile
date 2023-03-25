@@ -13,7 +13,7 @@ ARG HOME_PANEL_VERSION="v2.11.6"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        tar=1.34-r0 \
+        tar=1.34-r2 \
     \
     && apk add --no-cache \
         nginx=1.22.1-r0 \
