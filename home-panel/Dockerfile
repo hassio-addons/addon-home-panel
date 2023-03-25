@@ -9,6 +9,7 @@ COPY rootfs /
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
 
 # Install packages
+ARG HOME_PANEL_VERSION="v2.11.6"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
@@ -21,7 +22,7 @@ RUN \
         yarn=1.22.19-r0 \
     \
     && mkdir -p /opt/panel \
-    && curl -L -s "https://github.com/timmo001/home-panel/releases/download/v2.11.6/home-panel.tar.gz" \
+    && curl -L -s "https://github.com/timmo001/home-panel/releases/download/${HOME_PANEL_VERSION}/home-panel.tar.gz" \
         | tar zxvf - -C /opt/panel \
     \
     && cd /opt/panel \
