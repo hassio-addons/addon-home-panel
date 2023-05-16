@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:13.2.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:14.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -13,12 +13,12 @@ ARG HOME_PANEL_VERSION="v2.11.6"
 # hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        tar=1.34-r2 \
+        tar=1.34-r3 \
     \
     && apk add --no-cache \
-        nginx=1.22.1-r0 \
-        nodejs=18.14.2-r0 \
-        openssl=3.0.8-r4 \
+        nginx=1.24.0-r3 \
+        nodejs=18.16.0-r1 \
+        openssl=3.1.0-r4 \
         yarn=1.22.19-r0 \
     \
     && mkdir -p /opt/panel \
