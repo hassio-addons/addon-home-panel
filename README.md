@@ -29,15 +29,15 @@ customisable and themeable card based UI which can be used on a touch screen.
 
 [:books: Read the full add-on documentation][docs]
 
-![banner][banner]
+![banner](https://user-images.githubusercontent.com/9072397/239844514-3dd702a3-b37e-4b72-918e-52287f1b6fd5.png)
 
 ## Screenshots
 
-![Main Screen Screenshot][screen-main]
+![Main Screen Screenshot](https://user-images.githubusercontent.com/9072397/239844513-cc8907d5-7aba-4ed3-85f1-f11844c197cf.png)
 
-![Configuration Screenshot][screen-configuration-main]
+![Configuration Screenshot](https://user-images.githubusercontent.com/9072397/239844512-14c593b8-5063-4226-82ab-690850016480.png)
 
-![Showcase Purple Space][showcase-purple-space]
+![Showcase Purple Space](https://user-images.githubusercontent.com/9072397/239844508-a6af707c-b5eb-4e76-9ba5-4c24593c6b2f.png)
 
 ## Support
 
