@@ -18,7 +18,7 @@ RUN \
     && apk add --no-cache \
         nginx=1.24.0-r6 \
         nodejs=18.17.0-r0 \
-        openssl=3.1.1-r2 \
+        openssl=3.1.1-r3 \
         yarn=1.22.19-r0 \
     \
     && mkdir -p /opt/panel \
